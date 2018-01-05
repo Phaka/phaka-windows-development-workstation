@@ -40,6 +40,9 @@ choco upgrade -y adobeair
 # choco upgrade -y adobeshockwaveplayer
 # choco upgrade -y adobe-creative-cloud
 
+# Comparing Documents
+choco upgrade -y winmerge
+
 # Git
 choco upgrade -y git
 choco upgrade -y git-lfs
@@ -150,6 +153,7 @@ choco upgrade -y windows-sdk-10.1
 # Editors
 choco upgrade -y atom
 choco upgrade -y notepadplusplus
+choco upgrade -y sublimetext3
 
 # NuGet
 choco upgrade -y nuget.commandline
@@ -213,6 +217,9 @@ choco upgrade -y resharper-ultimate-all
 # WiX Toolset
 choco upgrade -y wixtoolset
 
+# WebDeploy
+choco upgrade -y webdeploy
+
 # PowerShell
 choco upgrade -y pester
 choco upgrade -y pscx # PowerShell Community Extensions 
@@ -243,14 +250,20 @@ choco upgrade -y slack
 choco upgrade -y gitter
 
 # SQL Server
+# choco upgrade -y sql-server-express
 # choco upgrade -y sql-server-management-studio
 # choco upgrade -y sqlserver-odbcdriver
 # choco upgrade -y sqlserverlocaldb
 # choco upgrade -y sqljdbc
 # choco upgrade -y vscode-mssql
+# choco upgrade -y sqlserver-cmdlineutils
+
+# SQLite
+# choco upgrade -y sqlite
 
 # PostgreSql
 # choco upgrade -y postgresql
+# choco upgrade -y pgadmin4
 
 # MySQL
 # choco upgrade -y mysql
@@ -292,3 +305,13 @@ choco upgrade -y servicebusexplorer
 choco upgrade -y azuredatafactorytools15
 choco upgrade -y azure-documentdb-emulator
 choco upgrade -y vscode-azurerm-tools
+
+# Antlr
+# choco upgrade -y antlrworks2
+
+# TeX
+choco upgrade -y miktex
+choco upgrade -y pandoc
+
+# Microsoft Office
+choco upgrade -y onenote
