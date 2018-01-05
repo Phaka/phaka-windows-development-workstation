@@ -4,6 +4,25 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 choco upgrade -y powershell
 choco upgrade -y powershell-packagemanagement
 
+# Background Information
+choco upgrade -y bginfo
+
+# Fonts
+choco upgrade -y ubuntu.font
+choco upgrade -y sourcecodepro
+choco upgrade -y droidsansmono
+choco upgrade -y droidfonts
+choco upgrade -y dejavufonts
+choco upgrade -y anonymouspro
+choco upgrade -y bitstreamverafonts
+choco upgrade -y firacode
+choco upgrade -y hackfont
+choco upgrade -y robotofonts
+choco upgrade -y noto
+choco upgrade -y oxygenmono
+choco upgrade -y opensans
+choco upgrade -y font-awesome-font
+
 # Browsers 
 choco upgrade -y firefox 
 choco upgrade -y googlechrome 
@@ -103,6 +122,9 @@ choco upgrade -y ruby2.devkit
 
 # NodeJS
 choco upgrade -y nodejs
+choco upgrade -y nodejs-lts
+choco upgrade -y yarn
+choco upgrade -y bower
 
 # C++ Development
 choco upgrade -y cmake
@@ -155,8 +177,19 @@ choco upgrade -y atom
 choco upgrade -y notepadplusplus
 choco upgrade -y sublimetext3
 
+# Mono
+choco upgrade -y mono
+choco upgrade -y gtksharp
+choco upgrade -y monodevelop
+
 # NuGet
 choco upgrade -y nuget.commandline
+choco upgrade -y nugetpackageexplorer
+
+# Octopus Deploy
+# choco upgrade -y octopustools
+
+
 
 # Visual Studio Code
 choco upgrade -y visualstudiocode
@@ -181,7 +214,6 @@ choco upgrade -y visualstudio2015professional
 # choco upgrade -y visualstudio2015-powershelltools
 # choco upgrade -y poshtools-visualstudio2015
 
-
 # Visual Studio 2017
 choco upgrade -y visualstudio2017professional
 # choco upgrade -y visualstudio2017enterprise
@@ -191,6 +223,9 @@ choco upgrade -y ghostdoc-enterprise
 
 # Java Development
 choco upgrade -y gradle
+choco upgrade -y maven
+choco upgrade -y ant
+choco upgrade -y ivy
 
 # JetBrains
 choco upgrade -y jetbrainstoolbox
@@ -315,3 +350,36 @@ choco upgrade -y pandoc
 
 # Microsoft Office
 choco upgrade -y onenote
+
+# R
+# choco upgrade -y r.studio
+
+# Log Parser Studio
+choco upgrade -y logparserstudio
+
+# Snagit
+choco upgrade -y snagit --version 13.1.1
+
+# Networking
+choco upgrade -y winpcap
+choco upgrade -y wireshark
+choco upgrade -y microsoft-message-analyzer
+
+# yubico
+choco upgrade -y yubico-authenticator
+choco upgrade -y yubikey-neo-manager
+choco upgrade -y yubikey-personalization-tool
+
+# Objective-C for Windows
+# choco upgrade -y upgrade winobjc-tools
+
+# DevOps
+choco upgrade -y chefdk
+
+
+choco upgrade -y inspec#choco upgrade -y picassio
+
+
+conan
+
+
