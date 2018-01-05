@@ -125,9 +125,10 @@ choco upgrade -y nodejs
 choco upgrade -y nodejs-lts
 choco upgrade -y yarn
 choco upgrade -y bower
+choco upgrade -y gulp-cli
 
-# C++ Development
-choco upgrade -y cmake
+
+
 
 # Protocol Buffers
 choco upgrade -y protoc
@@ -189,8 +190,6 @@ choco upgrade -y nugetpackageexplorer
 # Octopus Deploy
 # choco upgrade -y octopustools
 
-
-
 # Visual Studio Code
 choco upgrade -y visualstudiocode
 choco upgrade -y vscode-powershell
@@ -226,6 +225,18 @@ choco upgrade -y gradle
 choco upgrade -y maven
 choco upgrade -y ant
 choco upgrade -y ivy
+
+# C++
+choco upgrade -y cmake
+choco upgrade -y conan
+choco upgrade -y doxygen.install
+
+# PHP Development
+choco upgrade -y php
+choco upgrade -y composer
+
+# C# Development
+choco upgrade -y nswagstudio
 
 # JetBrains
 choco upgrade -y jetbrainstoolbox
@@ -322,6 +333,11 @@ choco upgrade -y azcopy
 choco upgrade -y microsoftsecurityessentials
 choco upgrade -y mbca # Microsoft Baseline Configuration Analyze
 
+# GNU Privacy Guard for Windows
+# choco upgrade -y gpg4win-vanilla
+# choco upgrade -y gpg4win 
+# choco upgrade -y gpg4win-light
+
 # Cygwin
 # choco upgrade -y cygwin
 
@@ -346,13 +362,18 @@ choco upgrade -y vscode-azurerm-tools
 
 # TeX
 choco upgrade -y miktex
+
+# Documentation Generators
 choco upgrade -y pandoc
+choco upgrade -y mkdocs mkdocs-material
+choco upgrade -y sandcastle
 
 # Microsoft Office
 choco upgrade -y onenote
 
 # R
 # choco upgrade -y r.studio
+# choco upgrade -y r.project
 
 # Log Parser Studio
 choco upgrade -y logparserstudio
@@ -374,12 +395,15 @@ choco upgrade -y yubikey-personalization-tool
 # choco upgrade -y upgrade winobjc-tools
 
 # DevOps
-choco upgrade -y chefdk
+# choco upgrade -y chefdk
+# choco upgrade -y inspec
+# choco upgrade -y picassio
+
+# Puppet
+choco upgrade -y puppet
+choco upgrade -y geppetto
 
 
-choco upgrade -y inspec#choco upgrade -y picassio
 
-
-conan
 
 
