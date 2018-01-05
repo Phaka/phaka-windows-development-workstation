@@ -273,6 +273,9 @@ choco upgrade -y resharper-ultimate-all
 # choco upgrade -y resharpercpp
 # choco upgrade -y teamcityaddin
 
+# SpecFlow
+choco upgrade -y specflow
+
 # WiX Toolset
 choco upgrade -y wixtoolset
 
