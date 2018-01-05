@@ -1,5 +1,9 @@
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
+# PowerShell
+choco upgrade -y powershell
+choco upgrade -y powershell-packagemanagement
+
 # Browsers 
 choco upgrade -y firefox 
 choco upgrade -y googlechrome 
@@ -13,6 +17,9 @@ choco upgrade -y nmap
 choco upgrade -y sysinternals
 choco upgrade -y 7zip
 choco upgrade -y winimage
+choco upgrade -y grammarly
+
+# File Sharing
 # choco upgrade -y dropbox
 # choco upgrade -y onedrive
 # choco upgrade -y googledrive
@@ -49,6 +56,9 @@ choco upgrade -y docker
 # Go Language
 choco upgrade -y golang
 
+# Haskel
+choco upgrade -y haskell-stack
+
 # JDK
 choco upgrade -y jdk7 
 choco upgrade -y jdk8 
@@ -64,7 +74,7 @@ choco upgrade -y python2
 choco upgrade -y python3
 
 # VMware
-choco upgrade -y vmwareworkstation
+choco upgrade -y vmwareworkstation --version 12.5.7
 # choco upgrade -y vmwareplayer
 
 # Vagrant 
@@ -158,10 +168,12 @@ choco upgrade -y visualstudio2015professional
 # choco upgrade -y visualstudio2015-powershelltools
 # choco upgrade -y poshtools-visualstudio2015
 
-
 # Visual Studio 2017
 choco upgrade -y visualstudio2017professional
 # choco upgrade -y visualstudio2017enterprise
+
+# GhostDoc Enterprise
+choco upgrade -y ghostdoc-enterprise
 
 # Java Development
 choco upgrade -y gradle
@@ -191,6 +203,15 @@ choco upgrade -y resharper-ultimate-all
 # WiX Toolset
 choco upgrade -y wixtoolset
 
+# PowerShell
+choco upgrade -y pester
+choco upgrade -y pscx # PowerShell Community Extensions 
+choco upgrade -y psake
+choco upgrade -y carbon
+
+# AWS
+choco upgrade -y awstools.powershell
+
 # Packet
 choco upgrade -y paket
 
@@ -202,6 +223,9 @@ choco upgrade -y op # 1Password CLI
 choco upgrade -y rdm 
 # choco upgrade -y rdmfree 
 # choco upgrade -y rdmagent
+
+# Royal TS
+# choco upgrade -y royalts
 
 # Slack
 choco upgrade -y slack
@@ -247,4 +271,12 @@ choco upgrade -y msys2
 
 # mingw
 # choco upgrade -y mingw
+
+# Azure
+# choco upgrade -y azurepowershell --version 0.9.3
+choco upgrade -y windowsazurepowershell
+choco upgrade -y azure-cli
+choco upgrade -y zurestorageexplorer
+choco upgrade -y servicebusexplorer
+
 
