@@ -44,8 +44,19 @@ choco upgrade -y adobeair
 choco upgrade -y git
 choco upgrade -y git-lfs
 
+# Mercurial
+choco upgrade -y hg
+
+# SVN
+choco upgrade -y svn
+
 # GitKraken
 choco upgrade -y gitkraken
+# choco upgrade -y smartgit
+# choco upgrade -y sourcetree
+# choco upgrade -y tortoisehg
+# choco upgrade -y tortoisesvn
+# choco upgrade -y tortoisegit
 
 # Web Platform Installer
 choco upgrade -y webpi
@@ -66,8 +77,6 @@ choco upgrade -y jdk9
 
 # Eclipse
 # choco install eclipse
-
-
 
 # Python
 choco upgrade -y python2
@@ -168,6 +177,7 @@ choco upgrade -y visualstudio2015professional
 # choco upgrade -y visualstudio2015-powershelltools
 # choco upgrade -y poshtools-visualstudio2015
 
+
 # Visual Studio 2017
 choco upgrade -y visualstudio2017professional
 # choco upgrade -y visualstudio2017enterprise
@@ -237,6 +247,7 @@ choco upgrade -y gitter
 # choco upgrade -y sqlserver-odbcdriver
 # choco upgrade -y sqlserverlocaldb
 # choco upgrade -y sqljdbc
+# choco upgrade -y vscode-mssql
 
 # PostgreSql
 # choco upgrade -y postgresql
@@ -278,5 +289,6 @@ choco upgrade -y windowsazurepowershell
 choco upgrade -y azure-cli
 choco upgrade -y zurestorageexplorer
 choco upgrade -y servicebusexplorer
-
-
+choco upgrade -y azuredatafactorytools15
+choco upgrade -y azure-documentdb-emulator
+choco upgrade -y vscode-azurerm-tools
