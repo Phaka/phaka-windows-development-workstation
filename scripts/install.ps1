@@ -72,6 +72,9 @@ choco upgrade -y hg
 # SVN
 choco upgrade -y svn
 
+# Bazaar
+# bzr
+
 # GitKraken
 choco upgrade -y gitkraken
 # choco upgrade -y smartgit
@@ -104,6 +107,9 @@ choco upgrade -y jdk9
 choco upgrade -y python2
 choco upgrade -y python3
 
+# Clojure 
+# choco upgrade -y clojure
+
 # VMware
 choco upgrade -y vmwareworkstation --version 12.5.7
 # choco upgrade -y vmwareplayer
@@ -126,9 +132,6 @@ choco upgrade -y nodejs-lts
 choco upgrade -y yarn
 choco upgrade -y bower
 choco upgrade -y gulp-cli
-
-
-
 
 # Protocol Buffers
 choco upgrade -y protoc
@@ -190,6 +193,8 @@ choco upgrade -y nugetpackageexplorer
 # Octopus Deploy
 # choco upgrade -y octopustools
 
+# CMake
+
 # Visual Studio Code
 choco upgrade -y visualstudiocode
 choco upgrade -y vscode-powershell
@@ -198,6 +203,8 @@ choco upgrade -y vscode-docker
 choco upgrade -y vscode-cake
 choco upgrade -y vscode-gitattributes
 choco upgrade -y vscode-gitlens
+
+choco upgrade -y cmake
 
 # Visual Studio 2012
 # choco upgrade -y visualstudio2012ultimate
@@ -225,6 +232,12 @@ choco upgrade -y gradle
 choco upgrade -y maven
 choco upgrade -y ant
 choco upgrade -y ivy
+
+# Spring Tool Suite
+# choco upgrade -y springtoolsuite
+
+# NetBeans
+# choco upgrade -y netbeans
 
 # C++
 choco upgrade -y cmake
@@ -361,12 +374,17 @@ choco upgrade -y vscode-azurerm-tools
 # choco upgrade -y antlrworks2
 
 # TeX
-choco upgrade -y miktex
+# choco upgrade -y miktex
 
 # Documentation Generators
-choco upgrade -y pandoc
-choco upgrade -y mkdocs mkdocs-material
-choco upgrade -y sandcastle
+# choco upgrade -y pandoc
+# choco upgrade -y mkdocs mkdocs-material
+# choco upgrade -y sandcastle
+# choco upgrade -y hugo
+
+# The Open Source Living Documentation Generator
+# choco upgrade -y pickles
+# choco upgrade -y picklesui
 
 # Microsoft Office
 choco upgrade -y onenote
@@ -403,6 +421,8 @@ choco upgrade -y yubikey-personalization-tool
 choco upgrade -y puppet
 choco upgrade -y geppetto
 
+# Arduino IDE
+choco upgrade -y arduino
 
 
 
