@@ -7,12 +7,15 @@ configuration DevelopmentMachine
     
     Node localhost
     {
+        #------------------------------------------------------------------------------------------------------------------
+        # Chocolatey
+        #------------------------------------------------------------------------------------------------------------------           
         cChocoInstaller Chocolatey
         {
             InstallDir = "$env:ALLUSERSPROFILE\Chocolatey"
         }
         
-        Environment EnvironmentExample
+        Environment ChocolateyPath
         {
             Ensure = 'Present'
             Name = 'PATH'
@@ -21,6 +24,9 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
         }
         
+        #------------------------------------------------------------------------------------------------------------------
+        # Git
+        #------------------------------------------------------------------------------------------------------------------       
         cChocoPackageInstaller Git
         {
             Name = 'git.install'
@@ -36,6 +42,46 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # .NET Core
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller DotNetCore10
+        {
+            Name = 'dotnetcore-sdk'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            Version = "1.0"
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller DotNetCore11
+        {
+            Name = 'dotnetcore-sdk'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            Version = "1.1"
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller DotNetCore20
+        {
+            Name = 'dotnetcore-sdk'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            Version = "2.0"
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller DotNetCore21
+        {
+            Name = 'dotnetcore-sdk'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            Version = "2.1"
+            AutoUpgrade = $True
+        }         
+        
     }
 }
 
