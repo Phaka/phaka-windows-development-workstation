@@ -39,5 +39,6 @@ configuration DevelopmentMachine
     }
 }
 
+Install-Module -Name cChoco
 DevelopmentMachine
 Start-DscConfiguration -Verbose -Path ./DevelopmentMachine -Wait -Force
