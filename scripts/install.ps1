@@ -60,6 +60,31 @@ configuration DevelopmentMachine
         }     
 
         #------------------------------------------------------------------------------------------------------------------
+        # File Sharing
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller dropbox
+        {
+            Name = 'dropbox'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller onedrive
+        {
+            Name = 'onedrive'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller googledrive
+        {
+            Name = 'googledrive'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+
+        #------------------------------------------------------------------------------------------------------------------
         # Messenging Tools
         #------------------------------------------------------------------------------------------------------------------       
         cChocoPackageInstaller Slack
