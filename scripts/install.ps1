@@ -87,7 +87,74 @@ configuration DevelopmentMachine
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
+        }      
+
+        #------------------------------------------------------------------------------------------------------------------
+        # .NET Framework Versions
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Netfx35
+        {
+            Name = 'dotnet3.5'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller dotnet45
+        {
+            Name = 'dotnet4.5'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
         }         
+        cChocoPackageInstaller dotnet451
+        {
+            Name = 'dotnet4.5.1'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller dotnet452
+        {
+            Name = 'dotnet4.5.2'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller dotnet46
+        {
+            Name = 'dotnet4.6'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller dotnet461
+        {
+            Name = 'dotnet4.6.1'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller dotnet462
+        {
+            Name = 'dotnet4.6.2'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }      
+        cChocoPackageInstaller dotnet47
+        {
+            Name = 'dotnet4.7'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+        cChocoPackageInstaller dotnet471
+        {
+            Name = 'dotnet4.7.1'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
     }
 }
 
