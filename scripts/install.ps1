@@ -1,18 +1,15 @@
-configuration DevelopmentWorkstation2
-{
-    node ("localhost")
-    {
-        File DirectoryCopy
-        {
-            Ensure = "Present"  
-            Type = "File" 
-            DestinationPath = "$env:temp\Hello.txt"    
-            Contents = "Hello World"
-        }
-    }
-}
+#Requires -Version 5
 
-DevelopmentWorkstation2
-Start-DscConfiguration -Path .\DevelopmentWorkstation2 -ComputerName localhost -Wait -Force -Verbose
+#--------------------------------------------------------------------------
+# Chocolatey
+#--------------------------------------------------------------------------
+iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+#--------------------------------------------------------------------------
+# PowerShell
+#--------------------------------------------------------------------------
+choco upgrade -y boxstarter
+
+
 
 
