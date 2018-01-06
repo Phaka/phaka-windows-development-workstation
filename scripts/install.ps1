@@ -333,7 +333,7 @@ configuration DevelopmentMachine
         {
             Name = 'clojure'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
+            DependsOn = '[cChocoPackageInstaller]JDK8'
             AutoUpgrade = $True
         }     
         
@@ -351,7 +351,7 @@ configuration DevelopmentMachine
         {
             Name = 'ruby2.devkit'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
+            DependsOn = '[cChocoPackageInstaller]Ruby'
             AutoUpgrade = $True
         } 
 
