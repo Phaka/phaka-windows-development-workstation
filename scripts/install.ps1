@@ -109,7 +109,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller dotnet451
         {
             Name = 'dotnet4.5.1'
-            Ensure = 'Present'
+            Ensure = 'Present' 
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
