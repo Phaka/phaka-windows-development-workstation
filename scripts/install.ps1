@@ -13,4 +13,4 @@ configuration DevelopmentWorkstation
 }
 
 DevelopmentWorkstation
-Start-DscConfiguration -Path .\DevelopmentWorkstation –ComputerName localhost -Wait -Force -Verbose
+Start-DscConfiguration -Path .\DevelopmentWorkstation -ComputerName localhost -Wait -Force -Verbose
