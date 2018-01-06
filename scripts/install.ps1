@@ -333,6 +333,76 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
+        cChocoPackageInstaller TortoiseGit
+        {
+            Name = 'tortoisegit'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller SmartGit
+        {
+            Name = 'smartgit'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller SourceTree
+        {
+            Name = 'sourcetree'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Mercurial
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller Mercurial
+        {
+            Name = 'hg'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller TortoiseHG
+        {
+            Name = 'tortoisehg'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Subversion
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller Subversion
+        {
+            Name = 'svn'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller TortoiseSVN
+        {
+            Name = 'tortoisesvn'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Bazaar
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller Bazaar
+        {
+            Name = 'bzr'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
         
         #------------------------------------------------------------------------------------------------------------------
         # .NET Core
