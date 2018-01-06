@@ -101,7 +101,7 @@ choco upgrade -y jdk8
 choco upgrade -y jdk9 
 
 # Eclipse
-# choco install eclipse
+# choco upgrade -y eclipse
 
 # Python
 choco upgrade -y python2
@@ -211,7 +211,7 @@ choco upgrade -y cmake
 # choco upgrade -y ssdt12
 
 # Visual Studio 2013
-# choco install visualstudio2013premium
+# choco upgrade -y visualstudio2013premium
 
 # Visual Studio 2015
 choco upgrade -y visualstudio2015professional
