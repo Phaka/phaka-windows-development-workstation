@@ -24,27 +24,7 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
         }
         
-        #------------------------------------------------------------------------------------------------------------------
-        # Git
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller Git
-        {
-            Name = 'git.install'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # Git Clients
-        #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller GitKraken
-        {
-            Name = 'gitkraken'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
+
 
         #------------------------------------------------------------------------------------------------------------------
         # Browsers
@@ -79,7 +59,110 @@ configuration DevelopmentMachine
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }      
+        }     
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Messenging Tools
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller Slack
+        {
+            Name = 'slack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller MicrosoftTeams
+        {
+            Name = 'microsoft-teams'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller Gitter
+        {
+            Name = 'gitter'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Password Managers
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller _1Password
+        {
+            Name = '1password'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller _1PasswordCli
+        {
+            Name = 'op'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Remote Desktop Manager
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller RemoteDesktopManager
+        {
+            Name = 'rdm'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        cChocoPackageInstaller RemoteDesktopManagerFree
+        {
+            Name = 'rdmfree'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        cChocoPackageInstaller RemoteDesktopManagerAgent
+        {
+            Name = 'rdmagent'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Royal TS
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller RoyalTS
+        {
+            Name = 'royalts'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Git
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller Git
+        {
+            Name = 'git.install'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Git Clients
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller GitKraken
+        {
+            Name = 'gitkraken'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
         
         #------------------------------------------------------------------------------------------------------------------
         # .NET Core
