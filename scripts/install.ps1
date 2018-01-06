@@ -99,7 +99,6 @@ choco upgrade -y golang
 choco upgrade -y haskell-stack
 
 # JDK
-choco upgrade -y jdk7 
 choco upgrade -y jdk8 
 choco upgrade -y jdk9 
 
