@@ -14,16 +14,16 @@ configuration DevelopmentMachine
         
         Environment EnvironmentExample
         {
-            Ensure = "Present" 
-            Name = "PATH"
-            Value = "$env:ALLUSERSPROFILE\Chocolatey\bin"
+            Ensure = 'Present'
+            Name = 'PATH'
+            Value = '$env:ALLUSERSPROFILE\Chocolatey\bin'
             Path = $true
-            DependsOn = "[cChocoInstaller]Chocolatey"
+            DependsOn = '[cChocoInstaller]Chocolatey'
         }
         
         cChocoPackageInstaller Git
         {
-            Name = "git.install"
+            Name = 'git.install'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
@@ -31,7 +31,7 @@ configuration DevelopmentMachine
         
         cChocoPackageInstaller GitKraken
         {
-            Name = "gitkraken"
+            Name = 'gitkraken'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
