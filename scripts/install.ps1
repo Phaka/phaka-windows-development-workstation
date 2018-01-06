@@ -23,8 +23,6 @@ configuration DevelopmentMachine
             Path = $true
             DependsOn = '[cChocoInstaller]Chocolatey'
         }
-        
-
 
         #------------------------------------------------------------------------------------------------------------------
         # Browsers
