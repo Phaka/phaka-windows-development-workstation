@@ -1,6 +1,7 @@
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # PowerShell
+choco upgrade -y dotnet4.5.2
 choco upgrade -y powershell
 # TODO: Only install if PowerShell 5.1 is installed
 # choco upgrade -y powershell-packagemanagement
@@ -148,7 +149,7 @@ choco upgrade -y dotnetcore-sdk --version 2.1
 choco upgrade -y dotnet3.5
 choco upgrade -y dotnet4.5
 choco upgrade -y dotnet4.5.1
-choco upgrade -y dotnet4.5.2
+
 choco upgrade -y dotnet4.6.1
 choco upgrade -y dotnet-4.6.2
 choco upgrade -y dotnet4.6
