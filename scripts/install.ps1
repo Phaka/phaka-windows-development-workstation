@@ -7,6 +7,14 @@ choco upgrade -y powershell-packagemanagement
 # Background Information
 choco upgrade -y bginfo
 
+# Browsers 
+choco upgrade -y firefox 
+choco upgrade -y googlechrome 
+choco upgrade -y googlechrome.canary
+choco upgrade -y opera
+# choco upgrade -y chromium
+# choco upgrade -y vivaldi
+
 # Fonts
 choco upgrade -y ubuntu.font
 choco upgrade -y sourcecodepro
@@ -22,14 +30,6 @@ choco upgrade -y noto
 choco upgrade -y oxygenmono
 choco upgrade -y opensans
 choco upgrade -y font-awesome-font
-
-# Browsers 
-choco upgrade -y firefox 
-choco upgrade -y googlechrome 
-choco upgrade -y googlechrome.canary
-choco upgrade -y opera
-# choco upgrade -y chromium
-# choco upgrade -y vivaldi
 
 # Tools
 choco upgrade -y nmap
