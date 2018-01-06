@@ -303,9 +303,9 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
-        cChocoPackageInstaller YubikeyNeoManager
+        cChocoPackageInstaller YubikeyPersonalizationTool
         {
-            Name = 'YubikeyPersonalizationTool'
+            Name = 'yubikey-personalization-tool'
             Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
