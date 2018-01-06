@@ -1,10 +1,14 @@
 #Requires -Version 5
 
-#--------------------------------------------------------------------------
-# Chocolatey
-#--------------------------------------------------------------------------
-iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+#Main-function
+function main {
+    $rc = Update-Chocolatey
+}
 
-#--------------------------------------------------------------------------
-# PowerShell
-#--------------------------------------------------------------------------
+#Helpers
+function Update-Chocolatey {
+    iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+}
+
+#Entry point
+main
