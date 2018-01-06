@@ -53,7 +53,41 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }         
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Browsers
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Firefox
+        {
+            Name = 'firefox'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
         
+        cChocoPackageInstaller GoogleChrome
+        {
+            Name = 'googlechrome'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+ 
+        cChocoPackageInstaller GoogleChromeCanary
+        {
+            Name = 'googlechrome.canary'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller Opera
+        {
+            Name = 'opera'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
     }
 }
 
