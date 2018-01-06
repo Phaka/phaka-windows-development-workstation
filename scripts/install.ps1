@@ -303,6 +303,90 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Go Language
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller GoLang
+        {
+            Name = 'golang'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Haskell
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Haskell
+        {
+            Name = 'haskell-stack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Clojure
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Clojure
+        {
+            Name = 'clojure'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Ruby
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Ruby
+        {
+            Name = 'ruby'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        cChocoPackageInstaller RubyDevKit
+        {
+            Name = 'ruby2.devkit'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+
+        #------------------------------------------------------------------------------------------------------------------
+        # NodeJS
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller NodeJS
+        {
+            Name = 'nodejs'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller Yarn
+        {
+            Name = 'yarn'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller Bower
+        {
+            Name = 'yarn'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller Gulp
+        {
+            Name = 'gulp-cli'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        
     }
 }
 
