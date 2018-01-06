@@ -14,3 +14,5 @@ configuration DevelopmentWorkstation2
 
 DevelopmentWorkstation2
 Start-DscConfiguration -Path .\DevelopmentWorkstation2 -ComputerName localhost -Wait -Force -Verbose
+
+
