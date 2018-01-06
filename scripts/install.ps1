@@ -163,7 +163,7 @@ configuration DevelopmentMachine
         {
             Name = 'netfx-4.5.2-devpack'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]dotnet452'
+            DependsOn = '[cChocoPackageInstaller]dotnet452'
             AutoUpgrade = $True
         } 
         
@@ -171,7 +171,7 @@ configuration DevelopmentMachine
         {
             Name = 'netfx-4.6-devpack'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]dotnet46'
+            DependsOn = '[cChocoPackageInstaller]dotnet46'
             AutoUpgrade = $True
         } 
         
@@ -179,7 +179,7 @@ configuration DevelopmentMachine
         {
             Name = 'netfx-4.6.1-devpack'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]dotnet461'
+            DependsOn = '[cChocoPackageInstaller]dotnet461'
             AutoUpgrade = $True
         } 
         
@@ -187,7 +187,7 @@ configuration DevelopmentMachine
         {
             Name = 'netfx-4.6.2-devpack'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]dotnet462'
+            DependsOn = '[cChocoPackageInstaller]dotnet462'
             AutoUpgrade = $True
         } 
         
@@ -195,7 +195,7 @@ configuration DevelopmentMachine
         {
             Name = 'netfx-4.7-devpack'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]dotnet47'
+            DependsOn = '[cChocoPackageInstaller]dotnet47'
             AutoUpgrade = $True
         } 
         
@@ -203,7 +203,7 @@ configuration DevelopmentMachine
         {
             Name = 'netfx-4.7.1-devpack'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]dotnet471'
+            DependsOn = '[cChocoPackageInstaller]dotnet471'
             AutoUpgrade = $True
         } 
 
