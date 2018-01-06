@@ -369,21 +369,21 @@ configuration DevelopmentMachine
         {
             Name = 'yarn'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
+            DependsOn = '[cChocoPackageInstaller]NodeJS'
             AutoUpgrade = $True
         } 
         cChocoPackageInstaller Bower
         {
             Name = 'yarn'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
+            DependsOn = '[cChocoPackageInstaller]NodeJS'
             AutoUpgrade = $True
         }  
         cChocoPackageInstaller Gulp
         {
             Name = 'gulp-cli'
             Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
+            DependsOn = '[cChocoPackageInstaller]NodeJS'
             AutoUpgrade = $True
         }         
         
