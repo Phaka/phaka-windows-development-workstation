@@ -5,6 +5,8 @@ choco upgrade -y powershell
 # TODO: Only install if PowerShell 5.1 is installed
 # choco upgrade -y powershell-packagemanagement
 
+# choco upgrade -y IIS-WebServerRole --source windowsfeatures
+
 # Background Information
 choco upgrade -y bginfo
 
@@ -45,7 +47,7 @@ choco upgrade -y grammarly
 # choco upgrade -y googledrive
 
 # WebEx
-choco upgrade -y webexplayer
+# choco upgrade -y webexplayer
 
 # SSH Tools
 # choco upgrade -y winscp
@@ -106,7 +108,7 @@ choco upgrade -y jdk9
 
 # Python
 choco upgrade -y python2
-choco upgrade -y python3
+choco upgrade -y python
 
 # Clojure 
 # choco upgrade -y clojure
@@ -385,6 +387,7 @@ choco upgrade -y vscode-azurerm-tools
 # choco upgrade -y mkdocs mkdocs-material
 # choco upgrade -y sandcastle
 # choco upgrade -y hugo
+# choco upgrade -y sphinx --source python
 
 # The Open Source Living Documentation Generator
 # choco upgrade -y pickles
