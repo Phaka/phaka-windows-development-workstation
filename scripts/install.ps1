@@ -285,6 +285,24 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Python
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Python2
+        {
+            Name = 'python2'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller Python # Python3
+        {
+            Name = 'python'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
     }
 }
 
