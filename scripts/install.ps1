@@ -422,6 +422,33 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoPackageInstaller]JDK8'
             AutoUpgrade = $True
         }                  
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Java IDEs
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller SpringToolSuite
+        {
+            Name = 'springtoolsuite'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]JDK8'
+            AutoUpgrade = $True
+        }
+        
+        cChocoPackageInstaller Netbeans
+        {
+            Name = 'netbeans'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]JDK8'
+            AutoUpgrade = $True
+        }
+        
+        cChocoPackageInstaller Eclipse
+        {
+            Name = 'eclipse'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]JDK8'
+            AutoUpgrade = $True
+        }        
     }
 }
 
