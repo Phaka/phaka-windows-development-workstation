@@ -35,6 +35,9 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
         }
         
+        #------------------------------------------------------------------------------------------------------------------
+        # Git Clients
+        #------------------------------------------------------------------------------------------------------------------
         cChocoPackageInstaller GitKraken
         {
             Name = 'gitkraken'
@@ -42,17 +45,6 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # .NET Core
-        #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller DotNetCore
-        {
-            Name = 'dotnetcore-sdk'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
 
         #------------------------------------------------------------------------------------------------------------------
         # Browsers
@@ -88,6 +80,17 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }      
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # .NET Core
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller DotNetCore
+        {
+            Name = 'dotnetcore-sdk'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
 
         #------------------------------------------------------------------------------------------------------------------
         # .NET Framework Versions
@@ -448,7 +451,9 @@ configuration DevelopmentMachine
             Ensure = 'Absent'
             DependsOn = '[cChocoPackageInstaller]JDK8'
             AutoUpgrade = $True
-        }        
+        }  
+        
+
     }
 }
 
