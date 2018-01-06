@@ -1,4 +1,4 @@
-configuration DevelopmentWorkstation
+configuration DevelopmentWorkstation2
 {
     node ("localhost")
     {
@@ -12,5 +12,5 @@ configuration DevelopmentWorkstation
     }
 }
 
-DevelopmentWorkstation
-Start-DscConfiguration -Path .\DevelopmentWorkstation -ComputerName localhost -Wait -Force -Verbose
+DevelopmentWorkstation2
+Start-DscConfiguration -Path .\DevelopmentWorkstation2 -ComputerName localhost -Wait -Force -Verbose
