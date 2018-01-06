@@ -312,6 +312,23 @@ configuration DevelopmentMachine
         }
 
         #------------------------------------------------------------------------------------------------------------------
+        # Comparison Tools
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller WinMerge
+        {
+            Name = 'winmerge'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller BeyondCompare
+        {
+            Name = 'beyondcompare'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        #------------------------------------------------------------------------------------------------------------------
         # Git
         #------------------------------------------------------------------------------------------------------------------       
         cChocoPackageInstaller Git
