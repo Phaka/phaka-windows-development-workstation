@@ -364,7 +364,11 @@ configuration DevelopmentMachine
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        } 
+        }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # JavaScript Development
+        #------------------------------------------------------------------------------------------------------------------
         cChocoPackageInstaller Yarn
         {
             Name = 'yarn'
@@ -385,8 +389,39 @@ configuration DevelopmentMachine
             Ensure = 'Present'
             DependsOn = '[cChocoPackageInstaller]NodeJS'
             AutoUpgrade = $True
-        }         
+        }  
         
+        #------------------------------------------------------------------------------------------------------------------
+        # Java Development
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Gradle
+        {
+            Name = 'gradle'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]JDK8'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller Maven
+        {
+            Name = 'maven'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]JDK8'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller Ant
+        {
+            Name = 'ant'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]JDK8'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller IVY
+        {
+            Name = 'ivy'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]JDK8'
+            AutoUpgrade = $True
+        }                  
     }
 }
 
