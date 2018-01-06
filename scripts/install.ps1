@@ -97,7 +97,25 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
-    
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Utilities
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller 7zip
+        {
+            Name = '7zip'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller Grammarly
+        {
+            Name = 'grammarly'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+            
         #------------------------------------------------------------------------------------------------------------------
         # Password Managers
         #------------------------------------------------------------------------------------------------------------------       
@@ -153,6 +171,96 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # SSH Tools
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller winscp
+        {
+            Name = 'winscp'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller putty
+        {
+            Name = 'putty'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller BitviseSshClient
+        {
+            Name = 'bitvise-ssh-client'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller BitviseSshServer
+        {
+            Name = 'bitvise-ssh-server'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+        cChocoPackageInstaller OpenSSH
+        {
+            Name = 'openssh'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }           
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Networking
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller WinPCAP
+        {
+            Name = 'winpcap'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller Wireshark
+        {
+            Name = 'wireshark'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller MicrosoftMessageAnalyzer
+        {
+            Name = 'microsoft-message-analyzer'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller nmap
+        {
+            Name = 'nmap'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # System Tools
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller LogParserStudio
+        {
+            Name = 'logparserstudio'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller SysInternals
+        {
+            Name = 'sysinternals'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+
         
         #------------------------------------------------------------------------------------------------------------------
         # Yubico
