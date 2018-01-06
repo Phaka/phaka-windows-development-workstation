@@ -1,6 +1,6 @@
 configuration DevelopmentMachine
 {
-    Import-DscResource –ModuleName 'PSDesiredStateConfiguration'
+    Import-DscResource -ModuleName 'PSDesiredStateConfiguration'
     Import-DscResource -Name WindowsFeature
     Import-DscResource -Name cChocoInstaller
     Import-DscResource -Name cChocoPackageInstaller
