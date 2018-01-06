@@ -10,8 +10,8 @@ choco upgrade -y bginfo
 # Fonts
 choco upgrade -y ubuntu.font
 choco upgrade -y sourcecodepro
-choco upgrade -y droidsansmono
-choco upgrade -y droidfonts
+# choco upgrade -y droidsansmono
+# choco upgrade -y droidfonts
 choco upgrade -y dejavufonts
 choco upgrade -y anonymouspro
 choco upgrade -y bitstreamverafonts
