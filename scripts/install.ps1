@@ -139,6 +139,31 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Yubico
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller YubicoAuthenticator
+        {
+            Name = 'yubico-authenticator'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller YubikeyNeoManager
+        {
+            Name = 'yubikey-neo-manager'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller YubikeyNeoManager
+        {
+            Name = 'YubikeyPersonalizationTool'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
 
         #------------------------------------------------------------------------------------------------------------------
         # Git
