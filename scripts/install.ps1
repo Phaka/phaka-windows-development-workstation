@@ -2,7 +2,8 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 
 # PowerShell
 choco upgrade -y powershell
-choco upgrade -y powershell-packagemanagement
+# TODO: Only install if PowerShell 5.1 is installed
+# choco upgrade -y powershell-packagemanagement
 
 # Background Information
 choco upgrade -y bginfo
