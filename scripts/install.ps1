@@ -1,5 +1,19 @@
 #Requires -Version 5
 
+
+#--------------------------------------------------------------------------
+# Chocolatey
+#--------------------------------------------------------------------------
+$criteria = "Type='software' and IsAssigned=1 and IsHidden=0 and IsInstalled=0"
+$searcher = (New-Object -COM Microsoft.Update.Session).CreateUpdateSearcher()
+$updates  = $searcher.Search($criteria).Updates
+if ($updates.Count -ne 0) {
+  Write-Output "There are pending Windoes Updates. Please install them first"
+  return 
+} else {
+  Write-Output "The system is up to date"
+}
+
 #--------------------------------------------------------------------------
 # Chocolatey
 #--------------------------------------------------------------------------
@@ -25,12 +39,7 @@ choco upgrade -y dotnet4.5.2 powershell powershell-packagemanagement
 # Browsers
 #--------------------------------------------------------------------------
 # Browsers 
-choco upgrade -y firefox `
-    googlechrome `
-    googlechrome.canary `
-    # chromium `
-    # vivaldi `
-    opera 
+choco upgrade -y firefox googlechrome googlechrome.canary chromium vivaldi opera 
 
 Stop-Process -Name "Opera"  
 Stop-Process -Name "Chrome"  
