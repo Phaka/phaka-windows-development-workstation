@@ -90,7 +90,7 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
-        cChocoPackageInstaller Skype
+        cChocoPackageInstaller SkypeForBusiness
         {
             Name = 'skypeforbusiness'
             Ensure = 'Absent'
