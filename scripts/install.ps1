@@ -46,39 +46,11 @@ configuration DevelopmentMachine
         #------------------------------------------------------------------------------------------------------------------
         # .NET Core
         #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller DotNetCore10
+        cChocoPackageInstaller DotNetCore
         {
             Name = 'dotnetcore-sdk'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
-            Version = "1.0"
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller DotNetCore11
-        {
-            Name = 'dotnetcore-sdk'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            Version = "1.1"
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller DotNetCore20
-        {
-            Name = 'dotnetcore-sdk'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            Version = "2.0"
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller DotNetCore21
-        {
-            Name = 'dotnetcore-sdk'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            Version = "2.1"
             AutoUpgrade = $True
         }         
         
