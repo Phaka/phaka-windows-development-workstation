@@ -285,7 +285,6 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
-
         
         #------------------------------------------------------------------------------------------------------------------
         # Yubico
@@ -786,6 +785,24 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoPackageInstaller]JDK8'
             AutoUpgrade = $True
         }  
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Web Platform Installer
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller WebPI
+        {
+            Name = 'webpi'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller WebPICommandLine
+        {
+            Name = 'webpicmd'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
         
 
     }
