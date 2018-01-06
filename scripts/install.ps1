@@ -83,7 +83,21 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
-        
+        cChocoPackageInstaller Skype
+        {
+            Name = 'skype'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller Skype
+        {
+            Name = 'skypeforbusiness'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+    
         #------------------------------------------------------------------------------------------------------------------
         # Password Managers
         #------------------------------------------------------------------------------------------------------------------       
