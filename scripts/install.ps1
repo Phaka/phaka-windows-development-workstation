@@ -15,7 +15,7 @@ choco upgrade -y sourcecodepro
 choco upgrade -y dejavufonts
 choco upgrade -y anonymouspro
 choco upgrade -y bitstreamverafonts
-choco upgrade -y firacode
+# choco upgrade -y firacode
 choco upgrade -y hackfont
 choco upgrade -y robotofonts
 choco upgrade -y noto
