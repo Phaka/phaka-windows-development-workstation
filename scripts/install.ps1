@@ -27,10 +27,10 @@ choco upgrade -y bitstreamverafonts
 # choco upgrade -y firacode
 choco upgrade -y hackfont
 choco upgrade -y robotofonts
-choco upgrade -y noto
-choco upgrade -y oxygenmono
-choco upgrade -y opensans
-choco upgrade -y font-awesome-font
+# choco upgrade -y noto
+# choco upgrade -y oxygenmono
+# choco upgrade -y opensans
+# choco upgrade -y font-awesome-font
 
 # Tools
 choco upgrade -y nmap
