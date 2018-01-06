@@ -1,6 +1,5 @@
 #Requires -Version 5
 
-
 #--------------------------------------------------------------------------
 # Chocolatey
 #--------------------------------------------------------------------------
@@ -8,10 +7,10 @@ $criteria = "Type='software' and IsAssigned=1 and IsHidden=0 and IsInstalled=0"
 $searcher = (New-Object -COM Microsoft.Update.Session).CreateUpdateSearcher()
 $updates  = $searcher.Search($criteria).Updates
 if ($updates.Count -ne 0) {
-  Write-Output "There are pending Windoes Updates. Please install them first"
-  return 
+    Write-Output "There are pending Windows Updates. Please install them first"
+    return 
 } else {
-  Write-Output "The system is up to date"
+    Write-Output "The system is up to date. Proceeding with Software Update."
 }
 
 #--------------------------------------------------------------------------
