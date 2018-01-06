@@ -266,6 +266,25 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Java Development Kits
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller JDK8
+        {
+            Name = 'jdk8'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller JDK9
+        {
+            Name = 'jdk9'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
     }
 }
 
