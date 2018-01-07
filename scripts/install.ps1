@@ -7,6 +7,9 @@ configuration DevelopmentMachine
     
     Node localhost
     {
+    
+        $version = (new-object 'Version' (gcim Win32_OperatingSystem).Version)
+       
         LocalConfigurationManager
         {
             ConfigurationMode = "ApplyAndAutoCorrect"
