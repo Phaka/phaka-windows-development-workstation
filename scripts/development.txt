@@ -31,6 +31,10 @@ cinst netfx-4.6.2-devpac
 cinst netfx-4.7-devpack
 cinst netfx-4.7.1-devpack
 
+cinst 7zip
+
+cinst windows-sdk-6.0
+cinst windows-sdk-6.1
 cinst windows-sdk-7.1
 cinst windows-sdk-8.0
 cinst windows-sdk-8.1
