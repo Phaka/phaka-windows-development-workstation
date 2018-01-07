@@ -426,7 +426,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller TortoiseGit
         {
             Name = 'tortoisegit'
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
@@ -480,8 +480,6 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
-        
-
         
         #------------------------------------------------------------------------------------------------------------------
         # Bazaar
