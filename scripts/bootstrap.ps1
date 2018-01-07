@@ -7,3 +7,7 @@ Set-Item -Path WSMan:\localhost\MaxEnvelopeSizeKb -Value 8192
 
 # DSC Modules
 Install-Module -Name cChoco -Force
+
+# Get the party started
+Import-Module Boxstarter.Chocolatey
+Install-BoxstarterPackage -PackageName "https://raw.githubusercontent.com/Phaka/phaka-windows-development-workstation/initial/scripts/development.txt"
