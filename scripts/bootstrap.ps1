@@ -9,6 +9,6 @@ Set-Item -Path WSMan:\localhost\MaxEnvelopeSizeKb -Value 8192
 Install-Module -Name cChoco -Force
 
 # Get the party started
-Import-Module Boxstarter.Chocolatey
-$credentials = Get-Credential
-Install-BoxstarterPackage -Credential $credentials -PackageName "https://raw.githubusercontent.com/Phaka/phaka-windows-development-workstation/initial/scripts/development.txt"
+# Import-Module Boxstarter.Chocolatey
+# $credentials = Get-Credential
+# Install-BoxstarterPackage -Credential $credentials -PackageName "https://raw.githubusercontent.com/Phaka/phaka-windows-development-workstation/initial/scripts/development.txt"
