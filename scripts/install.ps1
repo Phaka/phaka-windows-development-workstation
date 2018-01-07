@@ -1540,6 +1540,61 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
             Source = 'python'
         }          
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Azure
+        #------------------------------------------------------------------------------------------------------------------
+        #cChocoPackageInstaller azurepowershell
+        #{
+        #    Name = "azurepowershell"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $False    
+        #    Version = 0.9.3
+        #}
+        
+        cChocoPackageInstaller azurepowershell
+        {
+            Name = "azurepowershell"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True 
+        } 
+        cChocoPackageInstaller azure-cli
+        {
+            Name = "azure-cli"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True 
+        } 
+        cChocoPackageInstaller zurestorageexplorer
+        {
+            Name = "zurestorageexplorer"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True 
+        }    
+        cChocoPackageInstaller servicebusexplorer
+        {
+            Name = "servicebusexplorer"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True 
+        }   
+        cChocoPackageInstaller azuredatafactorytools15
+        {
+            Name = "azuredatafactorytools15"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True 
+        }        
+        cChocoPackageInstaller azure-documentdb-emulator
+        {
+            Name = "azure-documentdb-emulator"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True 
+        }          
     }
 }
 
