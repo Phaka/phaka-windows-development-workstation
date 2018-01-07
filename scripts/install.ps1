@@ -1135,126 +1135,126 @@ configuration DevelopmentMachine
         cChocoPackageInstaller visualstudio2017-workload-netweb
         {
             Name = 'visualstudio2017-workload-netweb'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
         cChocoPackageInstaller visualstudio2017-workload-webbuildtools
         {
             Name = 'visualstudio2017-workload-webbuildtools'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }       
         cChocoPackageInstaller visualstudio2017-workload-netcoretools
         {
             Name = 'visualstudio2017-workload-netcoretools'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }      
         cChocoPackageInstaller visualstudio2017-workload-manageddesktop
         {
             Name = 'visualstudio2017-workload-manageddesktop'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
         cChocoPackageInstaller visualstudio2017-workload-azure
         {
             Name = 'visualstudio2017-workload-azure'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
         cChocoPackageInstaller visualstudio2017-workload-data
         {
             Name = 'visualstudio2017-workload-data'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }      
         cChocoPackageInstaller visualstudio2017-workload-nativedesktop
         {
             Name = 'visualstudio2017-workload-nativedesktop'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }      
         cChocoPackageInstaller visualstudio2017-workload-vctools
         {
             Name = 'visualstudio2017-workload-vctools'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }    
         cChocoPackageInstaller visualstudio2017-workload-node
         {
             Name = 'visualstudio2017-workload-node'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }     
         cChocoPackageInstaller visualstudio2017-workload-universal
         {
             Name = 'visualstudio2017-workload-universal'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }  
         cChocoPackageInstaller visualstudio2017-workload-netcrossplat
         {
             Name = 'visualstudio2017-workload-netcrossplat'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }    
         cChocoPackageInstaller visualstudio2017-workload-office
         {
             Name = 'visualstudio2017-workload-office'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }     
         cChocoPackageInstaller visualstudio2017-workload-visualstudioextension
         {
             Name = 'visualstudio2017-workload-visualstudioextension'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }  
         cChocoPackageInstaller visualstudio2017-workload-webcrossplat
         {
             Name = 'visualstudio2017-workload-webcrossplat'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
         cChocoPackageInstaller visualstudio2017-workload-managedgame
         {
             Name = 'visualstudio2017-workload-managedgame'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }         
         cChocoPackageInstaller visualstudio2017-workload-nativecrossplat
         {
             Name = 'visualstudio2017-workload-nativecrossplat'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }      
         cChocoPackageInstaller visualstudio2017-workload-nativegame
         {
             Name = 'visualstudio2017-workload-nativegame'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }       
         cChocoPackageInstaller visualstudio2017-workload-nativemobile
         {
             Name = 'visualstudio2017-workload-nativemobile'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }          
@@ -1265,7 +1265,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller Postman
         {
             Name = "postman"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
@@ -1276,49 +1276,49 @@ configuration DevelopmentMachine
         cChocoPackageInstaller jetbrainstoolbox
         {
             Name = "jetbrainstoolbox"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
         cChocoPackageInstaller resharper-ultimate-all
         {
             Name = "resharper-ultimate-all"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
         cChocoPackageInstaller resharper-clt
         {
             Name = "resharper-clt"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
         cChocoPackageInstaller clion-ide
         {
             Name = "clion-ide"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }  
         cChocoPackageInstaller phpstorm
         {
             Name = "phpstorm"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }          
         cChocoPackageInstaller datagrip
         {
             Name = "datagrip"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }    
         cChocoPackageInstaller webstorm
         {
             Name = "webstorm"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
@@ -1332,28 +1332,28 @@ configuration DevelopmentMachine
         cChocoPackageInstaller pycharm
         {
             Name = "pycharm"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }   
         cChocoPackageInstaller kotlinc
         {
             Name = "kotlinc"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }             
         cChocoPackageInstaller intellijidea-ultimate
         {
             Name = "intellijidea-ultimate"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }     
         cChocoPackageInstaller intellijidea-community
         {
             Name = "intellijidea-community"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }     
@@ -1402,7 +1402,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller dotcover-cli
         {
             Name = "dotcover-cli"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }       
@@ -1424,6 +1424,10 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }         
+
+        #------------------------------------------------------------------------------------------------------------------
+        # WiX toolset
+        #------------------------------------------------------------------------------------------------------------------
         cChocoPackageInstaller wixtoolset
         {
             Name = "wixtoolset"
@@ -1431,6 +1435,10 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Web Deploy
+        #------------------------------------------------------------------------------------------------------------------
         cChocoPackageInstaller WebDeploy
         {
             Name = "webdeploy"
@@ -1442,104 +1450,104 @@ configuration DevelopmentMachine
         #------------------------------------------------------------------------------------------------------------------
         # PowerShell
         #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller pester
-        {
-            Name = "pester"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller pscx
-        {
-            Name = "pscx"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller psake
-        {
-            Name = "psake"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller powershell
-        {
-            Name = "powershell"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }   
+        #cChocoPackageInstaller pester
+        #{
+        #    Name = "pester"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #} 
+        #cChocoPackageInstaller pscx
+        #{
+        #    Name = "pscx"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}  
+        #cChocoPackageInstaller psake
+        #{
+        #    Name = "psake"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #} 
+        #cChocoPackageInstaller powershell
+        #{
+        #    Name = "powershell"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}   
 
         #------------------------------------------------------------------------------------------------------------------
         # Documentation
         #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller miktex
-        {
-            Name = "miktex"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller pandoc
-        {
-            Name = "pandoc"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
-        cChocoPackageInstaller mkdocs
-        {
-            Name = "mkdocs"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller mkdocs-material
-        {
-            Name = "mkdocs-material"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }       
-        cChocoPackageInstaller sandcastle
-        {
-            Name = "sandcastle"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
-        cChocoPackageInstaller hugo
-        {
-            Name = "hugo"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }      
-        cChocoPackageInstaller sphinx
-        {
-            Name = "sphinx"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-            Source = 'python'
-        }          
-        cChocoPackageInstaller sphinx
-        {
-            Name = "pickles"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-            Source = 'python'
-        }         
-        cChocoPackageInstaller sphinx
-        {
-            Name = "picklesui"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-            Source = 'python'
-        }          
+        #cChocoPackageInstaller miktex
+        #{
+        #    Name = "miktex"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #} 
+        #cChocoPackageInstaller pandoc
+        #{
+        #    Name = "pandoc"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}        
+        #cChocoPackageInstaller mkdocs
+        #{
+        #    Name = "mkdocs"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}  
+        #cChocoPackageInstaller mkdocs-material
+        #{
+        #    Name = "mkdocs-material"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}       
+        #cChocoPackageInstaller sandcastle
+        #{
+        #    Name = "sandcastle"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}        
+        #cChocoPackageInstaller hugo
+        #{
+        #    Name = "hugo"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}      
+        #cChocoPackageInstaller sphinx
+        #{
+        #    Name = "sphinx"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #    Source = 'python'
+        #}          
+        #cChocoPackageInstaller pickles
+        #{
+        #    Name = "pickles"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #    Source = 'python'
+        #}         
+        #cChocoPackageInstaller picklesui
+        #{
+        #    Name = "picklesui"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #    Source = 'python'
+        #}          
         
         #------------------------------------------------------------------------------------------------------------------
         # Azure
@@ -1552,49 +1560,48 @@ configuration DevelopmentMachine
         #    AutoUpgrade = $False    
         #    Version = 0.9.3
         #}
-        
-        cChocoPackageInstaller azurepowershell
-        {
-            Name = "azurepowershell"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True 
-        } 
-        cChocoPackageInstaller azure-cli
-        {
-            Name = "azure-cli"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True 
-        } 
-        cChocoPackageInstaller zurestorageexplorer
-        {
-            Name = "zurestorageexplorer"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True 
-        }    
-        cChocoPackageInstaller servicebusexplorer
-        {
-            Name = "servicebusexplorer"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True 
-        }   
-        cChocoPackageInstaller azuredatafactorytools15
-        {
-            Name = "azuredatafactorytools15"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True 
-        }        
-        cChocoPackageInstaller azure-documentdb-emulator
-        {
-            Name = "azure-documentdb-emulator"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True 
-        }          
+        #cChocoPackageInstaller azurepowershell
+        #{
+        #    Name = "azurepowershell"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True 
+        #} 
+        #cChocoPackageInstaller azure-cli
+        #{
+        #    Name = "azure-cli"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True 
+        #} 
+        #cChocoPackageInstaller zurestorageexplorer
+        #{
+        #    Name = "zurestorageexplorer"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True 
+        #}    
+        #cChocoPackageInstaller servicebusexplorer
+        #{
+        #    Name = "servicebusexplorer"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True 
+        #}   
+        #cChocoPackageInstaller azuredatafactorytools15
+        #{
+        #    Name = "azuredatafactorytools15"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True 
+        #}        
+        #cChocoPackageInstaller azure-documentdb-emulator
+        #{
+        #    Name = "azure-documentdb-emulator"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True 
+        #}          
     }
 }
 
