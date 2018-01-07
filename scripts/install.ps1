@@ -895,7 +895,58 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
         }
         
-
+        #------------------------------------------------------------------------------------------------------------------
+        # Visual Studio Code
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller VisualStudioCode
+        {
+            Name = 'visualstudiocode'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller vscode-powershell
+        {
+            Name = 'vscode-powershell'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller vscode-csharp
+        {
+            Name = 'vscode-csharp'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller vscode-docker
+        {
+            Name = 'vscode-docker'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller vscode-cake
+        {
+            Name = 'vscode-cake'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller vscode-gitattributes
+        {
+            Name = 'vscode-gitattributes'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        cChocoPackageInstaller vscode-gitlens
+        {
+            Name = 'vscode-gitlens'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
     }
 }
 
