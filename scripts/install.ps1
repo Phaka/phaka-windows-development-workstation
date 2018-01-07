@@ -328,13 +328,7 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
-        cChocoPackageInstaller windirstat
-        {
-            Name = 'windirstat'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
+ 
         cChocoPackageInstaller fciv
         {
             Name = 'fciv'
