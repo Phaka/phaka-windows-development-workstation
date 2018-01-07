@@ -724,6 +724,25 @@ configuration DevelopmentMachine
         } 
 
         #------------------------------------------------------------------------------------------------------------------
+        # SBT and Scala
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller SBT
+        {
+            Name = "sbt"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        cChocoPackageInstaller Scala
+        {
+            Name = "scala.install"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+
+        #------------------------------------------------------------------------------------------------------------------
         # Python
         #------------------------------------------------------------------------------------------------------------------
         cChocoPackageInstaller Python2
