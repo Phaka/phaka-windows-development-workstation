@@ -906,24 +906,7 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
         }  
 
-        #------------------------------------------------------------------------------------------------------------------
-        # Web Platform Installer
-        #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller WebPI
-        {
-            Name = 'webpi'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller WebPICommandLine
-        {
-            Name = 'webpicmd'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        
+       
         #------------------------------------------------------------------------------------------------------------------
         # Visual Studio Code
         #------------------------------------------------------------------------------------------------------------------
@@ -1602,6 +1585,110 @@ configuration DevelopmentMachine
         #    DependsOn = '[cChocoInstaller]Chocolatey'
         #    AutoUpgrade = $True 
         #}          
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Web Platform Installer
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller WebPI
+        {
+            Name = 'webpi'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller WebPICommandLine
+        {
+            Name = 'webpicmd'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        cChocoPackageInstaller UrlRewrite2
+        {
+            Name = 'UrlRewrite2'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }
+        
+        cChocoPackageInstaller ARRv3_0
+        {
+            Name = 'ARRv3_0'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }
+        
+        cChocoPackageInstaller AzureNodeSDK
+        {
+            Name = 'AzureNodeSDK'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }
+        
+        cChocoPackageInstaller AzurePHPSDK
+        {
+            Name = 'AzurePHPSDK'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }
+        
+        cChocoPackageInstaller AzurePython27SDK
+        {
+            Name = 'AzurePython27SDK'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }
+        
+        cChocoPackageInstaller AzurePython34SDK
+        {
+            Name = 'AzurePython34SDK'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }   
+        cChocoPackageInstaller AzureQuickStarts_1_6_0
+        {
+            Name = 'AzureQuickStarts_1_6_0'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }         
+        cChocoPackageInstaller AzureRubySDK
+        {
+            Name = 'AzureRubySDK'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }  
+        cChocoPackageInstaller WindowsAzurePowershellGet
+        {
+            Name = 'WindowsAzurePowershellGet'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }         
+        cChocoPackageInstaller WindowsAzurePowershellGet
+        {
+            Name = 'WindowsAzurePowershellGet'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoPackageInstaller]WebPI'
+            AutoUpgrade = $True
+            Source = 'webpi'
+        }  
     }
 }
 
