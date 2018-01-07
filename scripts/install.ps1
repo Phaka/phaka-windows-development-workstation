@@ -75,6 +75,52 @@ configuration DevelopmentMachine
         } 
 
         #------------------------------------------------------------------------------------------------------------------
+        # Visual C++ Runtimes
+        #------------------------------------------------------------------------------------------------------------------           
+        cChocoPackageInstaller vcredist2008
+        {
+            Name = 'vcredist2008'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller vcredist2010
+        {
+            Name = 'vcredist2010'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller vcredist2012
+        {
+            Name = 'vcredist2012'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller vcredist2013
+        {
+            Name = 'vcredist2013'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller vcredist2015
+        {
+            Name = 'vcredist2015'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+        cChocoPackageInstaller vcredist2015
+        {
+            Name = 'vcredist2017'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+ 
+        #------------------------------------------------------------------------------------------------------------------
         # Windows Features
         #------------------------------------------------------------------------------------------------------------------           
         WindowsFeature IIS 
