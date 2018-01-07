@@ -1852,6 +1852,6 @@ configuration DevelopmentMachine
 # winrm quickconfig
 # Set-Item -Path WSMan:\localhost\MaxEnvelopeSizeKb -Value 8192
 # Install-Module -Name cChoco
-Remove-Item ./DevelopmentMachine -Force -Recurse
+$rc = Remove-Item ./DevelopmentMachine -Force -Recurse
 DevelopmentMachine
 Start-DscConfiguration -Path ./DevelopmentMachine -Wait -Verbose
