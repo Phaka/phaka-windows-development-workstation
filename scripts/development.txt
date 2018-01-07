@@ -1,13 +1,3 @@
-Disable-InternetExplorerESC
-Disable-BingSearch
-Enable-RemoteDesktop
-Enable-MicrosoftUpdate
-Enable-UAC
-Set-TaskbarOptions -Lock -Combine Always -AlwaysShowIconsOn -Dock Bottom
-
-# Doesn't work in Windows 10 or Windows Server 2016
-Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:SystemRoot}\System32\cmd.exe"
-
 chocolatey feature enable -n=allowGlobalConfirmation
 
 # cinst dotnet3.5
@@ -247,13 +237,14 @@ cinst slack
 
 chocolatey feature disable -n=allowGlobalConfirmation
 
-# Doesn't work in Windows 10 or Windows Server 2016
-Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:LOCALAPPDATA}\slack\slack.exe"
-Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
-# Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:ProgramFiles(x86)}\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe"
-
 # npm config set loglevel http
 # npm config set spin false
 # npm install -g ionic
 # npm install -g cordova
 
+Disable-InternetExplorerESC
+Disable-BingSearch
+Enable-RemoteDesktop
+Enable-MicrosoftUpdate
+Enable-UAC
+Set-TaskbarOptions -Lock -Combine Always -AlwaysShowIconsOn -Dock Bottom
