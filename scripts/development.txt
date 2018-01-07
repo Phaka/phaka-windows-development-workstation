@@ -1,3 +1,6 @@
+Set-ItemProperty 'HKCU:\Control Panel\Colors' -Name Background -Value "32 32 32 "
+
+
 chocolatey feature enable -n=allowGlobalConfirmation
 
 # cinst dotnet3.5
