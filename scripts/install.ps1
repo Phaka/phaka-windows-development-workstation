@@ -1605,7 +1605,8 @@ configuration DevelopmentMachine
     }
 }
 
-# winrm set winrm/config @{MaxEnvelopeSizekb="1024"}
+# winrm quickconfig
+# Set-Item -Path WSMan:\localhost\MaxEnvelopeSizeKb -Value 8192
 # Install-Module -Name cChoco
 DevelopmentMachine
 Start-DscConfiguration -Path ./DevelopmentMachine -Wait -Force -Verbose
