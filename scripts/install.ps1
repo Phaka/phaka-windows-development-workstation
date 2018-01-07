@@ -26,7 +26,92 @@ configuration DevelopmentMachine
             Ensure = "Present" 
             Name = "RemoteAccessMgmtTools"                       
         } 
-	
+        WindowsFeature FileAndStorage-Services
+        { 
+            Ensure = "Present" 
+            Name = "FileAndStorage-Services"                       
+        } 	
+        WindowsFeature Storage-Services
+        { 
+            Ensure = "Present" 
+            Name = "Storage-Services"                       
+        } 
+        WindowsFeature NET-Framework-Features
+        { 
+            Ensure = "Present" 
+            Name = "NET-Framework-Features"                       
+        } 
+        WindowsFeature NET-Framework-Core
+        { 
+            Ensure = "Present" 
+            Name = "NET-Framework-Core"                       
+        } 
+        WindowsFeature NET-Framework-45-Features
+        { 
+            Ensure = "Present" 
+            Name = "NET-Framework-45-Features"                       
+        } 
+        WindowsFeature NET-Framework-45-Core
+        { 
+            Ensure = "Present" 
+            Name = "NET-Framework-45-Core"                       
+        } 
+        WindowsFeature NET-WCF-Services45
+        { 
+            Ensure = "Present" 
+            Name = "NET-WCF-Services45"                       
+        } 
+        WindowsFeature NET-WCF-TCP-PortSharing45
+        { 
+            Ensure = "Present" 
+            Name = "NET-WCF-TCP-PortSharing45"                       
+        } 
+        WindowsFeature FS-SMB1
+        { 
+            Ensure = "Present" 
+            Name = "FS-SMB1"                       
+        } 	
+        WindowsFeature Windows-Defender-Features
+        { 
+            Ensure = "Present" 
+            Name = "Windows-Defender-Features"                       
+        } 
+        WindowsFeature Windows-Defender
+        { 
+            Ensure = "Present" 
+            Name = "Windows-Defender"                       
+        } 
+        WindowsFeature Windows-Defender-Gui
+        { 
+            Ensure = "Present" 
+            Name = "Windows-Defender-Gui"                       
+        } 	
+        WindowsFeature PowerShellRoot
+        { 
+            Ensure = "Present" 
+            Name = "PowerShellRoot"                       
+        } 
+        WindowsFeature PowerShell
+        { 
+            Ensure = "Present" 
+            Name = "PowerShell"                       
+        }
+        WindowsFeature PowerShell-V2
+        { 
+            Ensure = "Present" 
+            Name = "PowerShell-V2"                       
+        }
+        WindowsFeature PowerShell-ISE
+        { 
+            Ensure = "Present" 
+            Name = "PowerShell-ISE"                       
+        }
+        WindowsFeature WoW64-Support
+        { 
+            Ensure = "Present" 
+            Name = "WoW64-Support"                       
+        }
+
         #------------------------------------------------------------------------------------------------------------------
         # Chocolatey
         #------------------------------------------------------------------------------------------------------------------           
