@@ -963,6 +963,288 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }          
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Visual Studio 2012
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller visualstudio2012professional
+        {
+            Name = 'visualstudio2012professional'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller visualstudio2012premium
+        {
+            Name = 'visualstudio2012premium'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller visualstudio2012ultimate
+        {
+            Name = 'visualstudio2012ultimate'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+        cChocoPackageInstaller powershell-visualstudio2012
+        {
+            Name = 'poshtools-visualstudio2012'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller ssdt12
+        {
+            Name = 'ssdt12'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Visual Studio 2013
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller visualstudio2013premium
+        {
+            Name = 'visualstudio2013premium'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }             
+         cChocoPackageInstaller visualstudio2013professional
+        {
+            Name = 'visualstudio2013professional'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+         cChocoPackageInstaller powershell-visualstudio2013
+        {
+            Name = 'poshtools-visualstudio2013'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }       
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Visual Studio 2015
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller visualstudio2015community
+        {
+            Name = 'visualstudio2015community'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller visualstudio2015professional
+        {
+            Name = 'visualstudio2015professional'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller visualstudio2015enterprise
+        {
+            Name = 'visualstudio2015enterprise'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller ssdt15
+        {
+            Name = 'ssdt15'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+        cChocoPackageInstaller visualstudio2015-powershelltools
+        {
+            Name = 'visualstudio2015-powershelltools'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller poshtools-visualstudio2015
+        {
+            Name = 'poshtools-visualstudio2015'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller azuredatafactorytools15
+        {
+            Name = 'azuredatafactorytools15'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller visualstudio2015-nugetpackagemanager
+        {
+            Name = 'visualstudio2015-nugetpackagemanager'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Visual Studio 2017
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller visualstudio2017community
+        {
+            Name = 'visualstudio2017community'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller visualstudio2017professional
+        {
+            Name = 'visualstudio2017professional'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller visualstudio2017enterprise
+        {
+            Name = 'visualstudio2017enterprise'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+         cChocoPackageInstaller visualstudio2017buildtools
+        {
+            Name = 'visualstudio2017buildtools'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller visualstudio2017-workload-netweb
+        {
+            Name = 'visualstudio2017-workload-netweb'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller visualstudio2017-workload-webbuildtools
+        {
+            Name = 'visualstudio2017-workload-webbuildtools'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }       
+        cChocoPackageInstaller visualstudio2017-workload-netcoretools
+        {
+            Name = 'visualstudio2017-workload-netcoretools'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }      
+        cChocoPackageInstaller visualstudio2017-workload-manageddesktop
+        {
+            Name = 'visualstudio2017-workload-manageddesktop'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller visualstudio2017-workload-azure
+        {
+            Name = 'visualstudio2017-workload-azure'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller visualstudio2017-workload-data
+        {
+            Name = 'visualstudio2017-workload-data'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }      
+        cChocoPackageInstaller visualstudio2017-workload-nativedesktop
+        {
+            Name = 'visualstudio2017-workload-nativedesktop'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }      
+        cChocoPackageInstaller visualstudio2017-workload-vctools
+        {
+            Name = 'visualstudio2017-workload-vctools'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller visualstudio2017-workload-node
+        {
+            Name = 'visualstudio2017-workload-node'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        cChocoPackageInstaller visualstudio2017-workload-universal
+        {
+            Name = 'visualstudio2017-workload-universal'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller visualstudio2017-workload-netcrossplat
+        {
+            Name = 'visualstudio2017-workload-netcrossplat'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller visualstudio2017-workload-office
+        {
+            Name = 'visualstudio2017-workload-office'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        cChocoPackageInstaller visualstudio2017-workload-visualstudioextension
+        {
+            Name = 'visualstudio2017-workload-visualstudioextension'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller visualstudio2017-workload-webcrossplat
+        {
+            Name = 'visualstudio2017-workload-webcrossplat'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller visualstudio2017-workload-managedgame
+        {
+            Name = 'visualstudio2017-workload-managedgame'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller visualstudio2017-workload-nativecrossplat
+        {
+            Name = 'visualstudio2017-workload-nativecrossplat'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }      
+        cChocoPackageInstaller visualstudio2017-workload-nativegame
+        {
+            Name = 'visualstudio2017-workload-nativegame'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }       
+        cChocoPackageInstaller visualstudio2017-workload-nativemobile
+        {
+            Name = 'visualstudio2017-workload-nativemobile'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
     }
 }
 
