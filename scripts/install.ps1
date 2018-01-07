@@ -1857,7 +1857,7 @@ configuration DevelopmentMachine
         }
         cChocoPackageInstaller vmwareplayer
         {
-            Name = 'vmwareworkstation'
+            Name = 'vmwareplayer'
             Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
