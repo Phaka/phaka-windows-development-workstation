@@ -7,6 +7,21 @@ configuration DevelopmentMachine
     
     Node localhost
     {
+        LocalConfigurationManager
+		{
+			ConfigurationMode = "ApplyAndAutoCorrect"
+			ConfigurationModeFrequencyMins = 30
+		}
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Windows Features
+        #------------------------------------------------------------------------------------------------------------------           
+        WindowsFeature IIS 
+        { 
+            Ensure = "Present" 
+            Name = "Web-Server"                       
+        } 
+        
         #------------------------------------------------------------------------------------------------------------------
         # Chocolatey
         #------------------------------------------------------------------------------------------------------------------           
@@ -760,6 +775,18 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
         } 
         
+        cChocoPackageInstaller jupyter # Python3
+        {
+            Name = 'jupyter'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+            Source = 'python'
+        } 
+        
+        # pip install mkdocs
+        # pip install mkdocs-cinder
+        
         #------------------------------------------------------------------------------------------------------------------
         # Go Language
         #------------------------------------------------------------------------------------------------------------------
@@ -906,6 +933,16 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
         }  
 
+        #------------------------------------------------------------------------------------------------------------------
+        # Fiddler4
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller fiddler4
+        {
+            Name = 'fiddler4'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
        
         #------------------------------------------------------------------------------------------------------------------
         # Visual Studio Code
@@ -1557,9 +1594,9 @@ configuration DevelopmentMachine
         #    DependsOn = '[cChocoInstaller]Chocolatey'
         #    AutoUpgrade = $True 
         #} 
-        #cChocoPackageInstaller zurestorageexplorer
+        #cChocoPackageInstaller azurestorageexplorer
         #{
-        #    Name = "zurestorageexplorer"
+        #    Name = "azurestorageexplorer" # microsoftazurestorageexplorer?
         #    Ensure = 'Present'
         #    DependsOn = '[cChocoInstaller]Chocolatey'
         #    AutoUpgrade = $True 
@@ -1689,6 +1726,57 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
             Source = 'webpi'
         }  
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # VMware Workstation
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller vmwareworkstation
+        {
+            Name = 'vmwareworkstation'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+            Version = 12.5
+        }
+        cChocoPackageInstaller vmwareplayer
+        {
+            Name = 'vmwareworkstation'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Hashicorp
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller packer
+        {
+            Name = 'packer'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller vagrant
+        {
+            Name = 'vagrant'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller vault
+        {
+            Name = 'vault'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller terraform
+        {
+            Name = 'terraform'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
     }
 }
 
