@@ -358,7 +358,11 @@ configuration DevelopmentMachine
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }        
+        }      
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # NuGet
+        #------------------------------------------------------------------------------------------------------------------        
         cChocoPackageInstaller nugetpackageexplorer
         {
             Name = 'nugetpackageexplorer'
@@ -366,7 +370,7 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
-        cChocoPackageInstaller Nuget.CommandLine
+        cChocoPackageInstaller NugetCommandLine
         {
             Name = 'Nuget.CommandLine'
             Ensure = 'Present'
