@@ -1608,4 +1608,4 @@ configuration DevelopmentMachine
 # winrm set winrm/config @{MaxEnvelopeSizekb="1024"}
 # Install-Module -Name cChoco
 DevelopmentMachine
-Start-DscConfiguration -Verbose -Path ./DevelopmentMachine -Wait -Force
+Start-DscConfiguration -Path ./DevelopmentMachine -Wait -Force # -Verbose
