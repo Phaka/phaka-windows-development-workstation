@@ -359,7 +359,21 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
-        
+        cChocoPackageInstaller nugetpackageexplorer
+        {
+            Name = 'nugetpackageexplorer'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller Nuget.CommandLine
+        {
+            Name = 'Nuget.CommandLine'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+       
         #------------------------------------------------------------------------------------------------------------------
         # Yubico
         #------------------------------------------------------------------------------------------------------------------       
