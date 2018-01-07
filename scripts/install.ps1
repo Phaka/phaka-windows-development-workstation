@@ -1104,10 +1104,32 @@ configuration DevelopmentMachine
         cChocoPackageInstaller fiddler4
         {
             Name = 'fiddler4'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Microsoft Office 365
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller office365proplus
+        {
+            Name = 'office365proplus'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Power BI
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller powerbi
+        {
+            Name = 'powerbi'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
        
         #------------------------------------------------------------------------------------------------------------------
         # Visual Studio Code
@@ -1239,7 +1261,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller visualstudio2015professional
         {
             Name = 'visualstudio2015professional'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
@@ -1253,14 +1275,14 @@ configuration DevelopmentMachine
         cChocoPackageInstaller ssdt15
         {
             Name = 'ssdt15'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }   
         cChocoPackageInstaller visualstudio2015-powershelltools
         {
             Name = 'visualstudio2015-powershelltools'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
@@ -1294,6 +1316,7 @@ configuration DevelopmentMachine
             Name = 'visualstudio2017community'
             Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
+            Params = '--allWorkloads --includeRecommended --includeOptional --passive --locale en-US --norestart --wait'
             AutoUpgrade = $True
         } 
         cChocoPackageInstaller visualstudio2017professional
@@ -1301,6 +1324,7 @@ configuration DevelopmentMachine
             Name = 'visualstudio2017professional'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
+            Params = '--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait'
             AutoUpgrade = $True
         }    
         cChocoPackageInstaller visualstudio2017enterprise
@@ -1308,6 +1332,7 @@ configuration DevelopmentMachine
             Name = 'visualstudio2017enterprise'
             Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
+            Params = '--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait'
             AutoUpgrade = $True
         } 
          cChocoPackageInstaller visualstudio2017buildtools
@@ -1315,134 +1340,9 @@ configuration DevelopmentMachine
             Name = 'visualstudio2017buildtools'
             Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
+            Params = '--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait'
             AutoUpgrade = $True
         }        
-        cChocoPackageInstaller visualstudio2017-workload-netweb
-        {
-            Name = 'visualstudio2017-workload-netweb'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller visualstudio2017-workload-webbuildtools
-        {
-            Name = 'visualstudio2017-workload-webbuildtools'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }       
-        cChocoPackageInstaller visualstudio2017-workload-netcoretools
-        {
-            Name = 'visualstudio2017-workload-netcoretools'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }      
-        cChocoPackageInstaller visualstudio2017-workload-manageddesktop
-        {
-            Name = 'visualstudio2017-workload-manageddesktop'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
-        cChocoPackageInstaller visualstudio2017-workload-azure
-        {
-            Name = 'visualstudio2017-workload-azure'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller visualstudio2017-workload-data
-        {
-            Name = 'visualstudio2017-workload-data'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }      
-        cChocoPackageInstaller visualstudio2017-workload-nativedesktop
-        {
-            Name = 'visualstudio2017-workload-nativedesktop'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }      
-        cChocoPackageInstaller visualstudio2017-workload-vctools
-        {
-            Name = 'visualstudio2017-workload-vctools'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }    
-        cChocoPackageInstaller visualstudio2017-workload-node
-        {
-            Name = 'visualstudio2017-workload-node'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }     
-        cChocoPackageInstaller visualstudio2017-workload-universal
-        {
-            Name = 'visualstudio2017-workload-universal'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller visualstudio2017-workload-netcrossplat
-        {
-            Name = 'visualstudio2017-workload-netcrossplat'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }    
-        cChocoPackageInstaller visualstudio2017-workload-office
-        {
-            Name = 'visualstudio2017-workload-office'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }     
-        cChocoPackageInstaller visualstudio2017-workload-visualstudioextension
-        {
-            Name = 'visualstudio2017-workload-visualstudioextension'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller visualstudio2017-workload-webcrossplat
-        {
-            Name = 'visualstudio2017-workload-webcrossplat'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
-        cChocoPackageInstaller visualstudio2017-workload-managedgame
-        {
-            Name = 'visualstudio2017-workload-managedgame'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
-        cChocoPackageInstaller visualstudio2017-workload-nativecrossplat
-        {
-            Name = 'visualstudio2017-workload-nativecrossplat'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }      
-        cChocoPackageInstaller visualstudio2017-workload-nativegame
-        {
-            Name = 'visualstudio2017-workload-nativegame'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }       
-        cChocoPackageInstaller visualstudio2017-workload-nativemobile
-        {
-            Name = 'visualstudio2017-workload-nativemobile'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }          
         
         #------------------------------------------------------------------------------------------------------------------
         # GhostDoc Enterprise
@@ -1461,7 +1361,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller Postman
         {
             Name = "postman"
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
@@ -1472,21 +1372,21 @@ configuration DevelopmentMachine
         cChocoPackageInstaller jetbrainstoolbox
         {
             Name = "jetbrainstoolbox"
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
         cChocoPackageInstaller resharper-ultimate-all
         {
             Name = "resharper-ultimate-all"
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
         cChocoPackageInstaller resharper-clt
         {
             Name = "resharper-clt"
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }        
@@ -1507,7 +1407,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller datagrip
         {
             Name = "datagrip"
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }    
@@ -1528,7 +1428,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller pycharm
         {
             Name = "pycharm"
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }   
@@ -1542,7 +1442,7 @@ configuration DevelopmentMachine
         cChocoPackageInstaller intellijidea-ultimate
         {
             Name = "intellijidea-ultimate"
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }     
@@ -1946,27 +1846,7 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
         }  
         
-        #------------------------------------------------------------------------------------------------------------------
-        # Microsoft Office 365
-        #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller office365proplus
-        {
-            Name = 'office365proplus'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
 
-        #------------------------------------------------------------------------------------------------------------------
-        # Power BI
-        #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller powerbi
-        {
-            Name = 'powerbi'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
         
     }
 }
