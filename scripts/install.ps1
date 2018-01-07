@@ -1258,6 +1258,161 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }          
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Postman
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Postman
+        {
+            Name = "postman"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+
+        #------------------------------------------------------------------------------------------------------------------
+        # JetBrains
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller jetbrainstoolbox
+        {
+            Name = "jetbrainstoolbox"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller resharper-ultimate-all
+        {
+            Name = "resharper-ultimate-all"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller resharper-clt
+        {
+            Name = "resharper-clt"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller clion-ide
+        {
+            Name = "clion-ide"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller phpstorm
+        {
+            Name = "phpstorm"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+        cChocoPackageInstaller datagrip
+        {
+            Name = "datagrip"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller webstorm
+        {
+            Name = "webstorm"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller pycharm-community 
+        {
+            Name = "pycharm-community "
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+        cChocoPackageInstaller pycharm
+        {
+            Name = "pycharm"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+        cChocoPackageInstaller kotlinc
+        {
+            Name = "kotlinc"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        cChocoPackageInstaller kotlinc
+        {
+            Name = "kotlinc"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller intellijidea-ultimate
+        {
+            Name = "intellijidea-ultimate"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        cChocoPackageInstaller intellijidea-community
+        {
+            Name = "intellijidea-community"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        cChocoPackageInstaller dotpeek
+        {
+            Name = "dotpeek"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller dotcover
+        {
+            Name = "dotcover"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        cChocoPackageInstaller dottrace
+        {
+            Name = "dottrace"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller dotmemory
+        {
+            Name = "dotmemory"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller resharpercpp
+        {
+            Name = "resharpercpp"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+        cChocoPackageInstaller dotcover-cli
+        {
+            Name = "dotcover-cli"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }       
+        cChocoPackageInstaller teamcityaddin
+        {
+            Name = "teamcityaddin"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }               
     }
 }
 
