@@ -69,8 +69,8 @@ chocolatey feature enable -n=allowGlobalConfirmation
 # cinst scala
 # cinst sbt
 
-# cinst python2
-# cinst python # Python 3
+# cinst python2 
+# cinst python
 # cinst jupyter -source python
 
 # cinst golang
