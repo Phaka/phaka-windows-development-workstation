@@ -17,8 +17,6 @@ configuration DevelopmentMachine
             RebootNodeIfNeeded = $true
         }
         
-             
- 
         #------------------------------------------------------------------------------------------------------------------
         # Windows Features
         #------------------------------------------------------------------------------------------------------------------           
@@ -259,56 +257,56 @@ configuration DevelopmentMachine
         cChocoPackageInstaller WindowsSDK60
         {
             Name = 'windows-sdk-6.0'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
         cChocoPackageInstaller WindowsSDK61
         {
             Name = 'windows-sdk-6.1'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }      
         cChocoPackageInstaller WindowsSDK70
         {
             Name = 'windows-sdk-7.0'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }         
         cChocoPackageInstaller WindowsSDK71
         {
             Name = 'windows-sdk-7.1'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }  
         cChocoPackageInstaller WindowsSDK80
         {
             Name = 'windows-sdk-8.0'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }         
         cChocoPackageInstaller WindowsSDK81
         {
             Name = 'windows-sdk-8.1'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }  
         cChocoPackageInstaller WindowsSDK10
         {
             Name = 'windows-sdk-10.0'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }  
         cChocoPackageInstaller WindowsSDK101
         {
             Name = 'windows-sdk-10.1'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
