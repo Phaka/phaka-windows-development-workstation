@@ -4,11 +4,11 @@ Install-WindowsUpdate -acceptEula
 
 chocolatey feature enable -n=allowGlobalConfirmation
 
-cinst IIS-WebServer -source windowsfeatures
-cinst NetFx3 -source windowsfeatures
-cinst NetFx3ServerFeatures -source windowsfeatures
-cinst NetFx4 -source windowsfeatures            
-cinst NetFx4ServerFeatures -source windowsfeatures
+# cinst IIS-WebServer -source windowsfeatures
+# cinst NetFx3 -source windowsfeatures
+# cinst NetFx3ServerFeatures -source windowsfeatures
+# cinst NetFx4 -source windowsfeatures            
+# cinst NetFx4ServerFeatures -source windowsfeatures
 # cinst NetFx4Extended-ASPNET45 -source windowsfeatures
 # cinst IIS-NetFxExtensibility -source windowsfeatures                                     
 # cinst IIS-NetFxExtensibility45 -source windowsfeatures
