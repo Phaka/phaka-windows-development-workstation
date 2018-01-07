@@ -246,5 +246,4 @@ Disable-InternetExplorerESC
 Disable-BingSearch
 Enable-RemoteDesktop
 Enable-MicrosoftUpdate
-Enable-UAC
 Set-TaskbarOptions -Lock -Combine Always -AlwaysShowIconsOn -Dock Bottom
