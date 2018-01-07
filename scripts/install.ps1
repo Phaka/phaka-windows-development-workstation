@@ -1342,14 +1342,7 @@ configuration DevelopmentMachine
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }     
-        cChocoPackageInstaller kotlinc
-        {
-            Name = "kotlinc"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
+        }             
         cChocoPackageInstaller intellijidea-ultimate
         {
             Name = "intellijidea-ultimate"
@@ -1364,41 +1357,48 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }     
-        cChocoPackageInstaller dotpeek
-        {
-            Name = "dotpeek"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }    
-        cChocoPackageInstaller dotcover
-        {
-            Name = "dotcover"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }     
-        cChocoPackageInstaller dottrace
-        {
-            Name = "dottrace"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller dotmemory
-        {
-            Name = "dotmemory"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }    
-        cChocoPackageInstaller resharpercpp
-        {
-            Name = "resharpercpp"
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }          
+        #cChocoPackageInstaller resharper
+        #{
+        #    Name = "resharper"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}         
+        #cChocoPackageInstaller dotpeek
+        #{
+        #    Name = "dotpeek"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}    
+        #cChocoPackageInstaller dotcover
+        #{
+        #    Name = "dotcover"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}     
+        #cChocoPackageInstaller dottrace
+        #{
+        #    Name = "dottrace"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #} 
+        #cChocoPackageInstaller dotmemory
+        #{
+        #    Name = "dotmemory"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}    
+        #cChocoPackageInstaller resharpercpp
+        #{
+        #    Name = "resharpercpp"
+        #    Ensure = 'Present'
+        #    DependsOn = '[cChocoInstaller]Chocolatey'
+        #    AutoUpgrade = $True
+        #}          
         cChocoPackageInstaller dotcover-cli
         {
             Name = "dotcover-cli"
@@ -1409,10 +1409,137 @@ configuration DevelopmentMachine
         cChocoPackageInstaller teamcityaddin
         {
             Name = "teamcityaddin"
-            Ensure = 'Present'
+            Ensure = 'Absent'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }               
+
+        #------------------------------------------------------------------------------------------------------------------
+        # SpecFlow
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller specflow
+        {
+            Name = "specflow"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller wixtoolset
+        {
+            Name = "wixtoolset"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller WebDeploy
+        {
+            Name = "webdeploy"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # PowerShell
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller pester
+        {
+            Name = "pester"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller pscx
+        {
+            Name = "pscx"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller psake
+        {
+            Name = "psake"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller powershell
+        {
+            Name = "powershell"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Documentation
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller miktex
+        {
+            Name = "miktex"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller pandoc
+        {
+            Name = "pandoc"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller mkdocs
+        {
+            Name = "mkdocs"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller mkdocs-material
+        {
+            Name = "mkdocs-material"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }       
+        cChocoPackageInstaller sandcastle
+        {
+            Name = "sandcastle"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller hugo
+        {
+            Name = "hugo"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }      
+        cChocoPackageInstaller sphinx
+        {
+            Name = "sphinx"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+            Source = 'python'
+        }          
+        cChocoPackageInstaller sphinx
+        {
+            Name = "pickles"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+            Source = 'python'
+        }         
+        cChocoPackageInstaller sphinx
+        {
+            Name = "picklesui"
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+            Source = 'python'
+        }          
     }
 }
 
