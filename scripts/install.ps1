@@ -58,6 +58,80 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }     
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Fonts
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller UbuntuFont
+        {
+            Name = 'ubuntu.font'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller sourcecodepro
+        {
+            Name = 'sourcecodepro'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller anonymouspro
+        {
+            Name = 'anonymouspro'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+        cChocoPackageInstaller bitstreamverafonts
+        {
+            Name = 'bitstreamverafonts'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller robotofonts
+        {
+            Name = 'robotofonts'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller opensans
+        {
+            Name = 'opensans'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller FontAwesomeFont
+        {
+            Name = 'font-awesome-font'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller oxygenmono
+        {
+            Name = 'oxygenmono'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller hackfont
+        {
+            Name = 'hackfont'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller noto
+        {
+            Name = 'noto'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
 
         #------------------------------------------------------------------------------------------------------------------
         # File Sharing
