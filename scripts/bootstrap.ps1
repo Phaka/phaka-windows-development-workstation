@@ -6,6 +6,7 @@ winrm quickconfig -quiet
 Set-Item -Path WSMan:\localhost\MaxEnvelopeSizeKb -Value 8192
 
 # DSC Modules
+Install-PackageProvider Nuget –force –verbose
 Install-Module -Name cChoco -Force
 
 # Get the party started
