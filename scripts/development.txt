@@ -23,8 +23,6 @@ cinst dotnet4.6.2
 cinst dotnet4.7
 cinst dotnet4.7.1
 
-Install-WindowsUpdate -acceptEula
-
 cinst netfx-4.5.1-devpack
 cinst netfx-4.5.2-devpack
 cinst netfx-4.6-devpac
@@ -33,14 +31,11 @@ cinst netfx-4.6.2-devpac
 cinst netfx-4.7-devpack
 cinst netfx-4.7.1-devpack
 
-# cinst windows-sdk-6.0
-# cinst windows-sdk-6.1
-# cinst windows-sdk-7.0
-# cinst windows-sdk-7.1
-# cinst windows-sdk-8.0
-# cinst windows-sdk-8.1
-# cinst windows-sdk-10.0
-# cinst windows-sdk-10.1
+cinst windows-sdk-7.1
+cinst windows-sdk-8.0
+cinst windows-sdk-8.1
+cinst windows-sdk-10.0
+cinst windows-sdk-10.1
 
 # cinst vcredist2008
 # cinst vcredist2010
@@ -261,7 +256,6 @@ Disable-InternetExplorerESC
 Disable-BingSearch
 Enable-RemoteDesktop
 Enable-MicrosoftUpdate
-Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
 Set-TaskbarOptions -Lock -Combine Always -AlwaysShowIconsOn -Dock Bottom
 
 Install-WindowsUpdate -acceptEula
