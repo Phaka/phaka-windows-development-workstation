@@ -125,13 +125,7 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }    
-        cChocoPackageInstaller noto
-        {
-            Name = 'noto'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
+       
 
         #------------------------------------------------------------------------------------------------------------------
         # File Sharing
