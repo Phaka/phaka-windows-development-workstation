@@ -7,11 +7,11 @@ configuration DevelopmentMachine
     
     Node localhost
     {
-	LocalConfigurationManager
-	{
-		ConfigurationMode = "ApplyAndAutoCorrect"
-		ConfigurationModeFrequencyMins = 30
-	}
+		LocalConfigurationManager
+		{
+			ConfigurationMode = "ApplyAndAutoCorrect"
+			ConfigurationModeFrequencyMins = 30
+		}
 
         #------------------------------------------------------------------------------------------------------------------
         # Windows Features
