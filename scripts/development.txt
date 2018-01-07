@@ -1,9 +1,12 @@
 Set-ItemProperty 'HKCU:\Control Panel\Colors' -Name Background -Value "32 32 32 "
 
+Install-WindowsUpdate -acceptEula
 
 chocolatey feature enable -n=allowGlobalConfirmation
 
-cinst dotnet3.5
+cinst NetFx3ServerFeatures -source windowsfeatures
+cinst NetFx3 -source windowsfeatures
+
 cinst dotnet4.5
 cinst dotnet4.5.1
 cinst dotnet4.5.2
@@ -12,6 +15,8 @@ cinst dotnet4.6.1
 cinst dotnet4.6.2
 cinst dotnet4.7
 cinst dotnet4.7.1
+
+Install-WindowsUpdate -acceptEula
 
 cinst netfx-4.5.1-devpack
 cinst netfx-4.5.2-devpack
@@ -249,4 +254,8 @@ Disable-InternetExplorerESC
 Disable-BingSearch
 Enable-RemoteDesktop
 Enable-MicrosoftUpdate
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
 Set-TaskbarOptions -Lock -Combine Always -AlwaysShowIconsOn -Dock Bottom
+
+Install-WindowsUpdate -acceptEula
+
