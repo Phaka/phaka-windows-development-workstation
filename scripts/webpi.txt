@@ -1,0 +1,414 @@
+    
+    The software that you obtain using the Web Platform Installer Command Line Tool is licensed to you by its owner.  Microsoft grants you no rights for third party software.
+ .   ..  ...    Successfully loaded primary feed: https://go.microsoft.com/?linkid=9842185
+    
+    Current language of installers is English
+    
+    --Available Products
+    ID                   Title
+    ----------------------------------------
+    5nine_Cloud_Security_Admin 5nine Cloud Security for Azure Pack: Admin Site Extension
+    5nine_Cloud_Security_Tenant 5nine Cloud Security for Azure Pack: Tenant Site Extension
+    Acronis_WAP_Extension_AdminPortal Acronis Backup Cloud for Azure Pack: Admin Site Extension
+    Acronis_WAP_Extension_CRP Acronis Backup Cloud for Azure Pack: API Service
+    Acronis_WAP_Extension_TenantPortal Acronis Backup Cloud for Azure Pack: Tenant Site Extension
+    AdvancedLogging      Advanced Logging
+    AppFabric            Windows Server AppFabric
+    ApplicationInsightsStatusMonitor Application Insights Status Monitor
+    AppWarmUp            IIS:  Application Initialization
+    ARR                  Application Request Routing 2.5 with KB2589179
+    ARRv2_5              Application Request Routing 2.5
+    ARRv2_5_KB2589179    KB2589179 for Application Request Routing 2.5
+    ARRv3_0              Application Request Routing 3.0
+    ASP                  IIS: ASP
+    ASPDOTNETandWebTools2012_2 ASP.NET and Web Tools 2012.2
+    ASPNET               IIS: ASP.NET
+    ASPNET35             ASPNET 3.5
+    ASPNET45             IIS: ASP.NET 4.5
+    ASPNET_REGIIS_NET4   Execute ASP.NET IIS Registration tool
+    ASPNET_REGIIS_NET45  Execute ASP.NET IIS Registration tool
+    AzureNodeSDK         Microsoft Azure SDK for Node.js
+    AzurePHPSDK          Microsoft Azure SDK for PHP
+    AzurePython27SDK     Microsoft Azure SDK for Python 2.7
+    AzurePython34SDK     Microsoft Azure SDK for Python 3.4
+    AzureQuickStarts_1_5_0 Azure QuickStarts
+    AzureQuickStarts_1_5_1 Azure QuickStarts
+    AzureQuickStarts_1_6_0 Azure QuickStarts
+    AzureRubySDK         Microsoft Azure SDK for Ruby
+    BasicAuthentication  IIS: Basic Authentication
+    CA_UB_Agent_Service  Cloud Assert Usage and Billing: Agent Service
+    CA_UB_API_Service    Cloud Assert Usage and Billing: API Service
+    CA_UB_WAP_Admin_Extension Cloud Assert Usage and Billing: Windows Azure Pack Admin Site Extension
+    CA_UB_WAP_Tenant_Extension Cloud Assert Usage and Billing: Windows Azure Pack Tenant Site Extension
+    CA_VC_API_Service    Cloud Assert VConnect: API Service
+    CA_VC_WAP_Admin_Extension Cloud Assert VConnect: Windows Azure Pack Admin Site Extension
+    CA_VC_WAP_Tenant_Extension Cloud Assert VConnect: Windows Azure Pack Tenant Site Extension
+    CC_WAP_Extension_Admin Cloud Cruiser for Windows Azure Pack: Admin Site Extension
+    CC_WAP_Extension_Tenant Cloud Cruiser for Windows Azure Pack: Tenant Site Extension
+    CertProvider         IIS: Centralized SSL Certificate Support
+    CGI                  IIS: CGI
+    ClientCertificateMappingAuthentication IIS: Client Certificate Mapping Authentication
+    Cors                 CORS 1.0
+    CustomLogging        IIS: Custom Logging
+    DACFX                Microsoft SQL Server Data-Tier Application Framework (DACFx) (June 2014)
+    DataFactoryVS2013Tools Microsoft Azure Data Factory Tools for Visual Studio 2013
+    DataFactoryVS2015Tools Microsoft Azure Data Factory Tools for Visual Studio 2015
+    DBManager            Database Manager 1.0
+    DbManagerUpdate      Database Manager 1.0 Hotfix
+    DefaultDocument      IIS: Default Document
+    DigestAuthentication IIS: Digest Authentication
+    DirectoryBrowse      IIS: Directory Browsing
+    DynamicContentCompression IIS: Dynamic Content Compression
+    DynamicIPRestrictions_Win8 IIS: Dynamic IP Restrictions
+    ECacheUpdate         Hotfix for External Cache 1.0
+    ExpressionEncoder4   Expression Encoder 4 with Service Pack 2
+    ExpressionWeb        Expression Web 4 Trial
+    ExternalCache        External Cache 1.1
+    FSharpVWD11          F# Tools for Visual Studio Express 2012 for Web
+    FTPExtensibility     IIS: FTP Extensibility
+    FTPServer            IIS: FTP Publishing Service 7.5
+    HDINSIGHT            Microsoft HDInsight Emulator for Windows Azure
+    HDInsightVS2012Tools Microsoft Azure HDInsight Tools for Visual Studio 2012
+    HDInsightVS2013Tools Microsoft Azure Data Lake Tools for Visual Studio 2013
+    HDInsightVS2015Tools Microsoft Azure Data Lake Tools for Visual Studio 2015
+    HiveODBCDriver_x64_2_5 Microsoft Hive ODBC Driver 64 bit
+    HiveODBCDriver_x86_2_5 Microsoft Hive ODBC Driver 32 bit
+    HTTPErrors           IIS: HTTP Errors
+    HTTPLogging          IIS: HTTP Logging
+    HttpPlatformHandlerv1_0 HttpPlatformHandler v1.2
+    HTTPRedirection      IIS: HTTP Redirection
+    IIS-ASPNET45         IIS-ASPNET45
+    IIS-BasicAuthentication IIS-BasicAuthentication
+    IIS-DefaultDocument  IIS-DefaultDocument
+    IIS-HttpCompressionDynamic IIS-HttpCompressionDynamic
+    IIS-HttpCompressionStatic IIS-HttpCompressionStatic
+    IIS-HttpErrors       IIS-HttpErrors
+    IIS-StaticContent    IIS-StaticContent
+    IIS-WebServer        IIS-WebServer
+    IIS-WindowsAuthentication IIS-WindowsAuthentication
+    IIS6ManagementConsole IIS: IIS 6 Management Console
+    IIS6ScriptingTools   IIS: IIS 6 Scripting Tools
+    IIS6WPICompatibility IIS: IIS 6 WMI Compatibility
+    IIS7                 IIS Recommended Configuration
+    IISClientCertificateMappingAuthentication IIS: Client Certificate Mapping Authentication
+    IISExpress           IIS 7.5 Express
+    IISExpress10         IIS 10.0 Express
+    IISExpress_7_5       IIS 7.5 Express (Sep 2011)
+    IISExpress_ByPlatform IIS 8.0 Express (Windows Vista and up) Or IIS 7.5 Express (Windows XP)- August 2012
+    IISManagementConsole IIS: Management Console
+    IISManagementScriptsAndTools IIS: Management Scripts and Tools
+    iisnode32            IISNode for IIS Express
+    iisnodedev32         IISNode for IIS Express
+    IPSecurity           IIS: IP and Domain  Restrictions
+    ISAPIExtensions      IIS: ISAPI Extensions
+    ISAPIFilters         IIS: ISAPI Filters
+    LoggingTools         IIS: Logging Tools
+    ManagementService    IIS: Management Service
+    MediaServices        IIS Media Services 4.1
+    MetabaseAndIIS6Compatibility IIS: IIS 6 Metabase Compatibility
+    MicrosoftAzure-ServiceFabric-CoreSDK Microsoft Azure Service Fabric SDK - 2.8.232
+    MicrosoftAzure-ServiceFabric-VS2015 Microsoft Azure Service Fabric SDK and Tools - 2.8.232 (VS2015)
+    MicrosoftAzure-ServiceFabric-VS2015-2_7_CU4 Microsoft Azure Service Fabric SDK and Tools - 2.7.221 (VS2015)
+    MicrosoftAzure-ServiceFabric-VS2015-2_8_CU1 Microsoft Azure Service Fabric SDK and Tools - 2.8.219 (VS2015)
+    ModSecurityIIS       ModSecurity IIS
+    MVC                  ASP.NET MVC 1.0
+    MVC2                 ASP.NET MVC 2
+    MVC3                 ASP.NET MVC 3 (Visual Studio 2010)
+    MVC3Loc              ASP.NET MVC 3 Tools Update Language Packs
+    MVC3LocInstaller     ASP.NET MVC 3 Tools Update Language Packs Installer
+    MVC4Vs2010_Loc       ASP.NET MVC 4 with Language Packs (August 2012)
+    MySQL                MySQL Windows 5.1
+    MySQLConnector       MySQL Connector/Net
+    MySQL_5_5            MySQL Windows 5.5
+    NETExtensibility     IIS: .NET Extensibility
+    NETFramework452      Microsoft .NET Framework 4.5.2
+    NetFx4Extended-ASPNET45 .NET 4.5 Extended with ASP.NET for Windows 8
+    NetFxExtensibility45 IIS: .NET Extensibility 4.5
+    NodeJSExt            Node.js extensions for IIS 7.x
+    ODBCLogging          IIS: ODBC Logging
+    OfficeToolsForVS2012RTW Microsoft Office Developer Tools for Visual Studio 2012
+    OfficeToolsForVS2013Update1 Microsoft Office Developer Tools for Visual Studio 2013 - August 2015 Update
+    OfficeToolsForVS2015 Microsoft Office Developer Tools Update 2 for Visual Studio 2015
+    OpenJDK_Zulu_1.7.0_win64 Azul Zulu, OpenJDK 1.7.0
+    PHP53                PHP 5.3.28
+    PHP53ForIISExpress   PHP 5.3.28 For IIS Express
+    PHP54                PHP 5.4.45
+    PHP54ForIISExpress   PHP 5.4.45 For IIS Express
+    PHP55                PHP 5.5.38
+    PHP55ForIISExpress   PHP 5.5.38 For IIS Express
+    PHP56                PHP 5.6.31
+    PHP56ForIISExpress   PHP 5.6.31 For IIS Express
+    PHP70                PHP 7.0.21 (x86)
+    PHP70ForIISExpress   PHP 7.0.21 (x86) For IIS Express
+    PHP70x64             PHP 7.0.21 (x64)
+    PHP70x64ForIISExpress PHP 7.0.21 (x64) For IIS Express
+    PHP71                PHP 7.1.7 (x86)
+    PHP71ForIISExpress   PHP 7.1.7 (x86) For IIS Express
+    PHP71x64             PHP 7.1.7 (x64)
+    PHP71x64ForIISExpress PHP 7.1.7 (x64) For IIS Express
+    PHPManager           PHP Manager for IIS
+    Python279            Python 2.7.9 (32-bit)
+    Python34             Python 3.4.2 (32-bit)
+    PythonTools21ForVS2010 Python Tools 2.1 for Visual Studio 2010
+    PythonTools21ForVS2012 Python Tools 2.1 for Visual Studio 2012
+    PythonTools21ForVS2013 Python Tools 2.1 for Visual Studio 2013
+    RequestFiltering     IIS: Request Filtering
+    RequestMonitor       IIS: Request Monitor
+    RM_WAP_Extension_Admin Gridpro Request Management for Windows Azure Pack: Admin Site Extension
+    RM_WAP_Extension_Tenant Gridpro Request Management for Windows Azure Pack: Tenant Site Extension
+    SEOToolkit           Search Engine Optimization Toolkit
+    ServerSideIncludes   IIS: Server Side Includes
+    ServiceBus           Service Bus 1.0
+    ServiceBusCU1        Service Bus 1.0 Cumulative Update 1
+    ServiceBus_1_1       Windows Azure Pack: Service Bus 1.1
+    ServiceBus_1_1_CU1   Windows Azure Pack: Security Update for Service Bus 1.1 (KB2972621)
+    ServiceBus_1_1_TLS_1_2 Windows Azure Pack: Service Bus 1.1 with TLS 1.2 Support
+    ServiceFabricSDK_2_7_CU4 Microsoft Azure Service Fabric SDK - 2.7.221
+    ServiceFabricSDK_2_8_CU1 Microsoft Azure Service Fabric SDK - 2.8.219
+    SMO                  SQL Server Shared Management Objects (2012 on Vista and up) or (2010 on XP or 2003 server)(
+    SmoothStreamingClient Smooth Streaming Client 2.0
+    SMO_10_5             SQL Server 2008 R2 Management Objects
+    SMO_11_0             SQL Server 2012 Shared Management Objects (April 2012)
+    SQLCE                Microsoftr SQL Serverr Compact Latest
+    SQLCE40RTW           Microsoftr SQL Serverr Compact 4.0
+    SQLCEforWM           Microsoft? SQL Server? Compact 4.0 SP1 CTP1
+    SQLCETools           Microsoftr SQL Serverr Compact Latest Scripting Tools
+    SQLCETools_4_0       Microsoftr SQL Serverr Compact 4.0 SP1 Scripting Tools
+    SQLCEVSTools         Microsoft Visual Studio 2010 SP1 Tools for SQL Server Compact 4.0
+    SQLCEVSToolsInstaller_4_0 Microsoft Visual Studio 2010 SP1 Tools for SQL Server Compact 4.0 Installer
+    SQLCEVSTools_4_0     Microsoft Visual Studio 2010 SP1 Tools for SQL Server Compact 4.0
+    SQLCE_4_0            Microsoftr SQL Serverr Compact 4.0 SP1
+    SQLCLRTypes          Microsoft System CLR Types for Microsoft SQL Server 2012 SP1 (Latest)
+    SQLDOM               Microsoft SQL Server 2012 SP1 Transact-SQL ScriptDom (Latest)
+    SQLDriver43PHP70IISExpressx64 Microsoft Drivers 4.3 (x64) for PHP v7.0 for SQL Server in IISExpress
+    SQLDriver43PHP70IISExpressx86 Microsoft Drivers 4.3 (x86) for PHP v7.0 for SQL Server in IISExpress
+    SQLDriver43PHP70IISx64 Microsoft Drivers 4.3 (x64) for PHP v7.0 for SQL Server in IIS
+    SQLDriver43PHP70IISx86 Microsoft Drivers 4.3 (x86) for PHP v7.0 for SQL Server in IIS
+    SQLDriver43PHP71IISExpressx64 Microsoft Drivers 4.3 (x64) for PHP v7.1 for SQL Server in IISExpress
+    SQLDriver43PHP71IISExpressx86 Microsoft Drivers 4.3 (x86) for PHP v7.1 for SQL Server in IISExpress
+    SQLDriver43PHP71IISx64 Microsoft Drivers 4.3 (x64) for PHP v7.1 for SQL Server in IIS
+    SQLDriver43PHP71IISx86 Microsoft Drivers 4.3 (x86) for PHP v7.1 for SQL Server in IIS
+    SQLDriverPHP53IIS    Microsoft Drivers 3.0 for PHP v5.3 for SQL Server in IIS
+    SQLDriverPHP53IISExpress Microsoft Drivers 3.0 for PHP v5.3 for SQL Server in IIS Express
+    SQLDriverPHP54IIS    Microsoft Drivers 3.2 for PHP v5.4 for SQL Server in IIS
+    SQLDriverPHP54IISExpress Microsoft Drivers 3.2 for PHP v5.4 for SQL Server in IIS Express
+    SQLDriverPHP55IIS    Microsoft Drivers 3.2 for PHP v5.5 for SQL Server in IIS
+    SQLDriverPHP55IISExpress Microsoft Drivers 3.2 for PHP v5.5 for SQL Server in IIS Express
+    SQLDriverPHP56IIS    Microsoft Drivers 3.2 for PHP v5.6 for SQL Server in IIS
+    SQLDriverPHP56IISExpress Microsoft Drivers 3.2 for PHP v5.6 for SQL Server in IIS Express
+    SQLDriverPHP70IISExpressx64 Microsoft Drivers 4.0 (x64) for PHP v7.0 for SQL Server in IISExpress
+    SQLDriverPHP70IISExpressx86 Microsoft Drivers 4.0 (x86) for PHP v7.0 for SQL Server in IISExpress
+    SQLDriverPHP70IISx64 Microsoft Drivers 4.0 (x64) for PHP v7.0 for SQL Server in IIS
+    SQLDriverPHP70IISx86 Microsoft Drivers 4.0 (x86) for PHP v7.0 for SQL Server in IIS
+    SQLDriverPHP71IISExpressx64 Microsoft Drivers 4.1 (x64) for PHP v7.1 for SQL Server in IISExpress
+    SQLDriverPHP71IISExpressx86 Microsoft Drivers 4.1 (x86) for PHP v7.1 for SQL Server in IISExpress
+    SQLDriverPHP71IISx64 Microsoft Drivers 4.1 (x64) for PHP v7.1 for SQL Server in IIS
+    SQLDriverPHP71IISx86 Microsoft Drivers 4.1 (x86) for PHP v7.1 for SQL Server in IIS
+    SQLExpress           SQL Server Express 2008 R2 Service Pack 2
+    SQLExpressAdv        SQL Server 2008 Express with Advanced Services
+    SQLExpressTools      SQL Server 2008 Express with Tools
+    SQLLocalDB           Microsoft SQL Express LocalDB Edition 11.0
+    SQLManagementStudio  SQL Server 2008 R2 Management Studio Express with SP1
+    SQLSERVERDATABASEEXPERIMENTATIONASSISTANT Database Experimentation Assistant
+    SQLSERVERUPGRADEADVISOR Data Migration Assistant
+    SSMAAccess           SQL Server Migration Assistant for Access
+    SSMADb2              SQL Server Migration Assistant for DB2
+    SSMAMySQL            SQL Server Migration Assistant for MySQL
+    SSMAOracle           SQL Server Migration Assistant for Oracle
+    SSMASybase           SQL Server Migration Assistant for Sybase
+    StaticContent        IIS: Static Content
+    StaticContentCompression IIS: Static Content Compression
+    SuperPreview         Expression SuperPreview Trial
+    TAC_WAP_Extensions   Team Access Control for Windows Azure Pack
+    Tracing              IIS: Tracing
+    TransformManager_1_1 IIS Transform Manager 1.1
+    URLAuthorization     IIS: URL Authorization
+    UrlRewrite2          URL Rewrite 2.1
+    VC12Redist           Microsoft Visual C++ 2012 Redistributable Package
+    VS2010SI             Visual Studio 2010 Shell (Integrated)
+    VS2010SP1Pack        Visual Studio 2010 SP1 (March 2011)
+    VS2013CommunityAzurePack Visual Studio Community 2013 with Microsoft Azure SDK - 2.9.6
+    VS2013CommunityAzurePack.2.9 Visual Studio Community 2013 with Microsoft Azure SDK - 2.9.6
+    VS2013_CE_Only       Visual Studio Community Edition 2013
+    VS2013_CE_Only.RTM   Visual Studio Community Edition 2013
+    VS2015CommunityAzurePack Visual Studio Community 2015 with Microsoft Azure SDK - 3.0.1
+    VS2015CommunityAzurePack.2.9 Visual Studio Community 2015 with Microsoft Azure SDK - 2.9.6
+    VS2015CommunityAzurePack.3.0 Visual Studio Community 2015 with Microsoft Azure SDK - 3.0.1
+    VS2015_CE_Only       Visual Studio Community Edition 2015
+    VS2015_CE_Only.RTM   Visual Studio Community Edition 2015
+    VS2015_CE_Only.U3    Visual Studio Community Edition 2015 with Update 3
+    VS2017_CE_Only       Visual Studio Community Edition 2015
+    VS2017_CE_Only.RTM   Visual Studio Community Edition 2015
+    VsLabTools           Microsoft Azure Environment Tools 2.5 (Preview) for Visual Studio 2015
+    VSPageInspector_v1   Page Inspector Developer Preview (VS11 Developer Preview)
+    VWD                  Visual Studio Express 2012 for Web (Latest)
+    VWD11AzurePack       Visual Studio Express 2012 for Web with Microsoft Azure SDK - 2.6
+    VWD11AzurePack.2.6   Visual Studio Express 2012 for Web with Microsoft Azure SDK - 2.6
+    VWD2010SP1AzurePack  Visual Web Developer Express 2010 SP1 with Azure SDK - 2.1
+    VWD2010SP1AzurePack.2.1 Visual Web Developer Express 2010 SP1 with Azure SDK - 2.1
+    VWD2013AzurePack     Visual Studio Express 2013 for Web with Microsoft Azure SDK - 2.9.6
+    VWD2013AzurePack.2.9 Visual Studio Express 2013 for Web with Microsoft Azure SDK - 2.9.6
+    VWD2015AzurePack     Visual Studio Express 2015 for Web with Microsoft Azure SDK - 3.0.1
+    VWD2015AzurePack.2.9 Visual Studio Express 2015 for Web with Microsoft Azure SDK - 2.9.6
+    VWD2015AzurePack.3.0 Visual Studio Express 2015 for Web with Microsoft Azure SDK - 3.0.1
+    VWDOrVs11AzurePack   Microsoft Azure SDK for .NET (VS 2012) - 2.6
+    VWDOrVs11AzurePack.2.6 Microsoft Azure SDK for .NET (VS 2012) - 2.6
+    VWDOrVs2010SP1AzurePack Windows Azure SDK for .NET (VS 2010 SP1) - 2.1
+    VWDOrVs2010SP1AzurePack.2.1 Windows Azure SDK for .NET (VS 2010 SP1) - 2.1
+    VWDOrVs2013AzurePack Microsoft Azure SDK for .NET (VS 2013) - 2.9.6
+    VWDOrVs2013AzurePack.2.9 Microsoft Azure SDK for .NET (VS 2013) - 2.9.6
+    VWDOrVs2015AzurePack Microsoft Azure SDK for .NET (VS 2015) - 3.0.1
+    VWDOrVs2015AzurePack.2.9 Microsoft Azure SDK for .NET (VS 2015) - 2.9.6
+    VWDOrVs2015AzurePack.3.0 Microsoft Azure SDK for .NET (VS 2015) - 3.0.1
+    VWD_RTW              Visual Web Developer 2010 Express
+    WAP_AdminApiAndServiceProviders_Bundle Windows Azure Pack: Admin API
+    WAP_AdminSite_Bundle Windows Azure Pack: Admin Site
+    WAP_AuthSite_Bundle  Windows Azure Pack: Tenant Authentication Site
+    WAP_Bpa              Windows Azure Pack: Microsoft Best Practices Analyzer
+    WAP_MySQLExtension_Bundle Windows Azure Pack: MySQL Extension
+    WAP_PowerShellAPI    Windows Azure Pack: PowerShell API
+    WAP_SingleMachineInstallation Windows Azure Pack: Portal and API Express
+    WAP_SQLServerExtension_Bundle Windows Azure Pack: SQL Server Extension
+    WAP_TenantApi_Bundle Windows Azure Pack: Tenant API
+    WAP_TenantPublicApi_Bundle Windows Azure Pack: Tenant Public API
+    WAP_TenantSite_Bundle Windows Azure Pack: Tenant Site
+    WAP_Websites         Windows Azure Pack: Websites Update Rollup 9
+    WAP_WindowsAuthSite_Bundle Windows Azure Pack: Admin Authentication Site
+    WAS-Config-APIs      WAS-Config-APIs
+    WASConfigurationAPI  IIS: WAS Configuration API
+    WASNetFxEnvironment  IIS: WAS .NET Environment
+    WASProcessModel      IIS: WAS Process Model
+    WCFRIAServices4Server WCF RIA Services Server install for .NET Framework 4.0
+    WDeploy              Web Deploy 3.5
+    WDeploy36            Web Deploy 3.6
+    WDeploy36NoSMO       Web Deploy 3.6 without bundled SQL support (latest)
+    WDeploy36PS          Web Deploy 3.6 for Hosting Servers
+    WDeployNoSMO         Web Deploy 3.5 without bundled SQL support (latest)
+    WDeployPS            Web Deploy 3.5 for Hosting Servers
+    WDeploy_2_1          Web Deployment Tool 2.1
+    WebDAV               IIS: WebDAV 7.5
+    WebFarmFramework     Web Farm Framework 1.1
+    WebMatrixWeb         Microsoft WebMatrix 3
+    WebsitePanel         WebsitePanel 2.0.0
+    WebSockets           IIS: Websockets Protocol
+    WFastCgi_21_279      WFastCGI 2.1 Gateway for IIS and Python 2.7.9
+    WFastCgi_21_34       WFastCGI 2.1 Gateway for IIS and Python 3.4
+    WHP_Recommended      Recommended Server Configuration for Web Hosting Providers
+    WIF                  Windows Identity Foundation
+    WIFSDK               Windows Identity Foundation SDK
+    WinCache53           Windows Cache Extension 1.3 for PHP 5.3
+    WinCache53IISExpress Windows Cache Extension 1.3 for PHP 5.3 in IISExpress
+    WinCache54           Windows Cache Extension 1.3 for PHP 5.4
+    WinCache54IISExpress Windows Cache Extension 1.3 for PHP 5.4 in IIS Express
+    WinCache55           Windows Cache Extension 1.3 for PHP 5.5
+    WinCache55IISExpress Windows Cache Extension 1.3 for PHP 5.5 in IIS Express
+    WinCache56           Windows Cache Extension 1.3 for PHP 5.6
+    WinCache56IISExpress Windows Cache Extension 1.3 for PHP 5.6 in IIS Express
+    WinCache70x64        Windows Cache Extension 2.0 (x64) for PHP 7.0
+    WinCache70x64IISExpress Windows Cache Extension 2.0 (x64) for PHP 7.0 in IIS Express
+    WinCache70x86        Windows Cache Extension 2.0 (x86) for PHP 7.0
+    WinCache70x86IISExpress Windows Cache Extension 2.0 (x86) for PHP 7.0 in IIS Express
+    WinCache71x64        Windows Cache Extension 2.0 (x64) for PHP 7.1
+    WinCache71x64IISExpress Windows Cache Extension 2.0 (x64) for PHP 7.1 in IIS Express
+    WinCache71x86        Windows Cache Extension 2.0 (x86) for PHP 7.1
+    WinCache71x86IISExpress Windows Cache Extension 2.0 (x86) for PHP 7.1 in IIS Express
+    WindowsAuthentication IIS: Windows Authentication
+    WindowsAzurePowershell Microsoft Azure PowerShell 0.9
+    WindowsAzurePowershellGet Microsoft Azure PowerShell
+    WindowsAzurePowershellVS Microsoft Azure PowerShell - Azure Stack Technical Preview 2
+    WindowsAzureXPlatCLI Microsoft Azure Cross-platform Command Line Tools
+    WorkflowClientCU4    Workflow Manager Client 1.0 Cumulative Update 4
+    WorkflowCU3          Workflow Manager 1.0 Cumulative Update 3
+    WorkflowCU4          Workflow Manager 1.0 Cumulative Update 4
+    WorkflowManager      Workflow Manager 1.0 for existing installs only - Use Workflow Manager Refresh (CU2) for new installs
+    WorkflowManagerRefresh Workflow Manager 1.0 Refresh (CU2)
+    WorkflowManagerToolsCU4 Workflow Manager Tools 1.0 Cumulative Update 4 for Visual Studio 2012
+    WPDTV3_RTM           Windows Phone SDK 8.0
+    
+    --Applications
+    ID                   Title
+    ----------------------------------------
+    ASPdatabaseNET       ASPdatabase.NET
+    AspxCommerce         AspxCommerce
+    a_webshop            a-webshop
+    BetterCMS            Better CMS
+    BeYourMarket         BeYourMarket
+    BitrixNetForgeCms    .NET Forge CMS
+    BlogEngineNET        BlogEngine.NET
+    BugNET               BugNET
+    CakePHP              CakePHP
+    CDesk                C-Desk
+    CMSaspNET            .NET CMS
+    CMSGallery           CMS Gallery
+    CompositeC1CMS       C1 CMS Foundation
+    Concrete5            Concrete5
+    CVenture             CVenture
+    DasBlog              DasBlog
+    dashCommerce         dashCommerce
+    DotNetAge            DotNetAge
+    DotNetNuke           DNN Platformr
+    Dropthings           Dropthings
+    eCB                  MyCommerceBooks
+    eccube               EC-CUBE
+    ECCUBEglobal         EC-CUBE Global Version
+    galleryserverpro     Gallery Server
+    HostAnySite          HostAnySite
+    Incentive            Weavy
+    Joomla               Joomla!
+    Kartris              Kartris
+    Kentico              Kentico
+    KoobooCMS            Kooboo CMS
+    KoobooCommunicator   Kooboo Communicator
+    Lemoon               Lemoon
+    Mayando              Mayando
+    MediaWiki            MediaWiki
+    MerchantTribe        MerchantTribe
+    MODxEvolution        MODx CMS
+    MonoX                MonoX
+    Moodle               Moodle
+    MVCForum             MVCForum
+    mycv                 My CV
+    N2CMS                N2 CMS 2.1 MVC Edition
+    nearforums           Nearforums
+    nopCommerce          nopCommerce
+    nService             nService
+    NumediaStack         Numedia Stack
+    ocPortal             Composr CMS
+    OfficeClipBasicEdition OfficeClip Basic Edition
+    OpenAtrium           Open Atrium
+    OpenCart             OpenCart
+    OrchardCMS           Orchard CMS
+    OrchardCollaboration Orchard Collaboration
+    OWA                  OWA
+    ParallelCampus       Parallel Campus
+    phpBB                phpBB
+    Piwik                Piwik
+    RakuCMS              RakuCMS
+    razorCnet            razorC.net
+    RESXManager          RESX Manager
+    SageFrame            SageFrame
+    Schlix               SCHLIX CMS
+    SepPortal14          SepPortal
+    ShoppingCartNET      Shopping Cart .NET
+    SilverStripeCMS      SilverStripe CMS
+    SmartStoreNET        SmartStore.NET
+    SoNETWebEngine       SoNET-Web-Engine
+    SplendidCRM          SplendidCRM
+    SugarCRM             SugarCRM
+    surveyproject        Survey Project
+    TandemServerCMS      Tandem Server CMS
+    TicketSystem         Ticket System
+    Tiki                 Tiki Wiki CMS Groupware
+    tomeCMS              tomeCMS
+    TYPO3CMS62           TYPO3 CMS 6.2
+    Umbraco              Umbraco CMS
+    vccommunity          Virto Commerce
+    VevoCart             VevoCart
+    WEBAD                WEB AD
+    Wikiaspnet           Wiki asp.net
+    WINRECRUIT           WINRECRUIT
+    WordPress            WordPress
+    WYSIWYG              WYSIWYG .NET
+    YetAnotherForumNET   YetAnotherForum.NET
+    ZBillingNET          ZBillingNET
+    
