@@ -35,6 +35,7 @@ cinst 7zip
 
 cinst windows-sdk-6.0
 cinst windows-sdk-6.1
+cinst windows-sdk-7.0
 cinst windows-sdk-7.1
 cinst windows-sdk-8.0
 cinst windows-sdk-8.1
