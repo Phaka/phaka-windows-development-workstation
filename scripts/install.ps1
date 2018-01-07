@@ -1399,6 +1399,17 @@ configuration DevelopmentMachine
         }          
         
         #------------------------------------------------------------------------------------------------------------------
+        # GhostDoc Enterprise
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller ghostdoc-enterprise
+        {
+            Name = 'ghostdoc-enterprise'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+       
+        #------------------------------------------------------------------------------------------------------------------
         # Postman
         #------------------------------------------------------------------------------------------------------------------
         cChocoPackageInstaller Postman
@@ -1824,14 +1835,6 @@ configuration DevelopmentMachine
         cChocoPackageInstaller AzureRubySDK
         {
             Name = 'AzureRubySDK'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoPackageInstaller]WebPI'
-            AutoUpgrade = $True
-            Source = 'webpi'
-        }  
-        cChocoPackageInstaller WindowsAzurePowershellGet
-        {
-            Name = 'WindowsAzurePowershellGet'
             Ensure = 'Absent'
             DependsOn = '[cChocoPackageInstaller]WebPI'
             AutoUpgrade = $True
