@@ -11,6 +11,7 @@ configuration DevelopmentMachine
         {
             ConfigurationMode = "ApplyAndAutoCorrect"
             ConfigurationModeFrequencyMins = 30
+            RebootNodeIfNeeded = $true
         }
 
         #------------------------------------------------------------------------------------------------------------------
