@@ -309,10 +309,39 @@ configuration DevelopmentMachine
         cChocoPackageInstaller Grammarly
         {
             Name = 'grammarly'
-            Ensure = 'Absent'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }
+        cChocoPackageInstaller nimbletext
+        {
+            Name = 'nimbletext'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller windirstat
+        {
+            Name = 'windirstat'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller windirstat
+        {
+            Name = 'windirstat'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller fciv
+        {
+            Name = 'fciv'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        
             
         #------------------------------------------------------------------------------------------------------------------
         # Password Managers
@@ -1866,7 +1895,30 @@ configuration DevelopmentMachine
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }         
+        }  
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Microsoft Office 365
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller office365proplus
+        {
+            Name = 'office365proplus'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Power BI
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller powerbi
+        {
+            Name = 'powerbi'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
     }
 }
 
