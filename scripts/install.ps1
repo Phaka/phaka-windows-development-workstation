@@ -17,111 +17,7 @@ configuration DevelopmentMachine
             RebootNodeIfNeeded = $true
         }
         
-        #------------------------------------------------------------------------------------------------------------------
-        # Windows SDKs
-        #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller WindowsSDK60
-        {
-            Name = 'windows-sdk-6.0'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller WindowsSDK61
-        {
-            Name = 'windows-sdk-6.1'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }      
-        cChocoPackageInstaller WindowsSDK70
-        {
-            Name = 'windows-sdk-7.0'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
-        cChocoPackageInstaller WindowsSDK71
-        {
-            Name = 'windows-sdk-7.1'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller WindowsSDK80
-        {
-            Name = 'windows-sdk-8.0'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
-        cChocoPackageInstaller WindowsSDK81
-        {
-            Name = 'windows-sdk-8.1'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller WindowsSDK10
-        {
-            Name = 'windows-sdk-10.0'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller WindowsSDK101
-        {
-            Name = 'windows-sdk-10.1'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-
-        #------------------------------------------------------------------------------------------------------------------
-        # Visual C++ Runtimes
-        #------------------------------------------------------------------------------------------------------------------           
-        cChocoPackageInstaller vcredist2008
-        {
-            Name = 'vcredist2008'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller vcredist2010
-        {
-            Name = 'vcredist2010'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller vcredist2012
-        {
-            Name = 'vcredist2012'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
-        cChocoPackageInstaller vcredist2013
-        {
-            Name = 'vcredist2013'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
-        cChocoPackageInstaller vcredist2015
-        {
-            Name = 'vcredist2015'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }   
-        cChocoPackageInstaller vcredist2015
-        {
-            Name = 'vcredist2017'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
+             
  
         #------------------------------------------------------------------------------------------------------------------
         # Windows Features
@@ -238,402 +134,232 @@ configuration DevelopmentMachine
             Path = $true
             DependsOn = '[cChocoInstaller]Chocolatey'
         }
-
+        
         #------------------------------------------------------------------------------------------------------------------
-        # Browsers
+        # .NET Framework Versions
         #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller Firefox
+        cChocoPackageInstaller dotnet35
         {
-            Name = 'firefox'
+            Name = 'dotnet3.5'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }  
-        
-        cChocoPackageInstaller GoogleChrome
+        cChocoPackageInstaller dotnet45
         {
-            Name = 'googlechrome'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
- 
-        cChocoPackageInstaller GoogleChromeCanary
-        {
-            Name = 'googlechrome.canary'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller Opera
-        {
-            Name = 'opera'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }     
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # Fonts
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller UbuntuFont
-        {
-            Name = 'ubuntu.font'
+            Name = 'dotnet4.5'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }         
-        cChocoPackageInstaller sourcecodepro
+        cChocoPackageInstaller dotnet451
         {
-            Name = 'sourcecodepro'
-            Ensure = 'Present'
+            Name = 'dotnet4.5.1'
+            Ensure = 'Present' 
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller anonymouspro
+        } 
+        cChocoPackageInstaller dotnet452
         {
-            Name = 'anonymouspro'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }   
-        cChocoPackageInstaller bitstreamverafonts
-        {
-            Name = 'bitstreamverafonts'
+            Name = 'dotnet4.5.2'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
-        cChocoPackageInstaller robotofonts
+        cChocoPackageInstaller dotnet46
         {
-            Name = 'robotofonts'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }    
-        cChocoPackageInstaller opensans
-        {
-            Name = 'opensans'
+            Name = 'dotnet4.6'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         } 
-        cChocoPackageInstaller FontAwesomeFont
+        cChocoPackageInstaller dotnet461
         {
-            Name = 'font-awesome-font'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller oxygenmono
-        {
-            Name = 'oxygenmono'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller hackfont
-        {
-            Name = 'hackfont'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }    
-       
-
-        #------------------------------------------------------------------------------------------------------------------
-        # File Sharing
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller dropbox
-        {
-            Name = 'dropbox'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller onedrive
-        {
-            Name = 'onedrive'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller googledrive
-        {
-            Name = 'googledrive'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }          
-
-        #------------------------------------------------------------------------------------------------------------------
-        # Messenging Tools
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller Slack
-        {
-            Name = 'slack'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller MicrosoftTeams
-        {
-            Name = 'microsoft-teams'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller Gitter
-        {
-            Name = 'gitter'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
-        cChocoPackageInstaller Skype
-        {
-            Name = 'skype'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
-        cChocoPackageInstaller SkypeForBusiness
-        {
-            Name = 'skypeforbusiness'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-
-        #------------------------------------------------------------------------------------------------------------------
-        # Utilities
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller 7zip
-        {
-            Name = '7zip'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller Grammarly
-        {
-            Name = 'grammarly'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller nimbletext
-        {
-            Name = 'nimbletext'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller windirstat
-        {
-            Name = 'windirstat'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
- 
-        cChocoPackageInstaller fciv
-        {
-            Name = 'fciv'
+            Name = 'dotnet4.6.1'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }         
-        
-            
-        #------------------------------------------------------------------------------------------------------------------
-        # Password Managers
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller _1Password
+        cChocoPackageInstaller dotnet462
         {
-            Name = '1password'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller _1PasswordCli
-        {
-            Name = 'op'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # Remote Desktop Manager
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller RemoteDesktopManager
-        {
-            Name = 'rdm'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        
-        cChocoPackageInstaller RemoteDesktopManagerFree
-        {
-            Name = 'rdmfree'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        
-        cChocoPackageInstaller RemoteDesktopManagerAgent
-        {
-            Name = 'rdmagent'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-
-        #------------------------------------------------------------------------------------------------------------------
-        # Royal TS
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller RoyalTS
-        {
-            Name = 'royalts'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # SSH Tools
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller winscp
-        {
-            Name = 'winscp'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller putty
-        {
-            Name = 'putty'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller BitviseSshClient
-        {
-            Name = 'bitvise-ssh-client'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller BitviseSshServer
-        {
-            Name = 'bitvise-ssh-server'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }   
-        cChocoPackageInstaller OpenSSH
-        {
-            Name = 'openssh'
-            Ensure = 'Absent'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }           
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # Networking
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller WinPCAP
-        {
-            Name = 'winpcap'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller Wireshark
-        {
-            Name = 'wireshark'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller MicrosoftMessageAnalyzer
-        {
-            Name = 'microsoft-message-analyzer'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        cChocoPackageInstaller nmap
-        {
-            Name = 'nmap'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # System Tools
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller LogParserStudio
-        {
-            Name = 'logparserstudio'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }        
-        cChocoPackageInstaller SysInternals
-        {
-            Name = 'sysinternals'
+            Name = 'dotnet4.6.2'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }      
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # NuGet
-        #------------------------------------------------------------------------------------------------------------------        
-        cChocoPackageInstaller nugetpackageexplorer
+        cChocoPackageInstaller dotnet47
         {
-            Name = 'nugetpackageexplorer'
+            Name = 'dotnet4.7'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }
-        cChocoPackageInstaller NugetCommandLine
+        }   
+        cChocoPackageInstaller dotnet471
         {
-            Name = 'Nuget.CommandLine'
+            Name = 'dotnet4.7.1'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # .NET Framework Development Packs
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller NetFx452devpack
+        {
+            Name = 'netfx-4.5.2-devpack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]dotnet452'
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller Netfx46devpack
+        {
+            Name = 'netfx-4.6-devpack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]dotnet46'
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller Netfx461devpack
+        {
+            Name = 'netfx-4.6.1-devpack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]dotnet461'
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller Netfx462devpack
+        {
+            Name = 'netfx-4.6.2-devpack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]dotnet462'
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller Netfx47devpack
+        {
+            Name = 'netfx-4.7-devpack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]dotnet47'
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller Netfx471devpack
+        {
+            Name = 'netfx-4.7.1-devpack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoPackageInstaller]dotnet471'
+            AutoUpgrade = $True
+        } 
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Windows SDKs
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller WindowsSDK60
+        {
+            Name = 'windows-sdk-6.0'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller WindowsSDK61
+        {
+            Name = 'windows-sdk-6.1'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }      
+        cChocoPackageInstaller WindowsSDK70
+        {
+            Name = 'windows-sdk-7.0'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller WindowsSDK71
+        {
+            Name = 'windows-sdk-7.1'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller WindowsSDK80
+        {
+            Name = 'windows-sdk-8.0'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller WindowsSDK81
+        {
+            Name = 'windows-sdk-8.1'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller WindowsSDK10
+        {
+            Name = 'windows-sdk-10.0'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller WindowsSDK101
+        {
+            Name = 'windows-sdk-10.1'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Visual C++ Runtimes
+        #------------------------------------------------------------------------------------------------------------------           
+        cChocoPackageInstaller vcredist2008
+        {
+            Name = 'vcredist2008'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller vcredist2010
+        {
+            Name = 'vcredist2010'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller vcredist2012
+        {
+            Name = 'vcredist2012'
             Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }         
-       
-        #------------------------------------------------------------------------------------------------------------------
-        # Yubico
-        #------------------------------------------------------------------------------------------------------------------       
-        cChocoPackageInstaller YubicoAuthenticator
+        cChocoPackageInstaller vcredist2013
         {
-            Name = 'yubico-authenticator'
-            Ensure = 'Absent'
+            Name = 'vcredist2013'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }
-        cChocoPackageInstaller YubikeyNeoManager
+        }         
+        cChocoPackageInstaller vcredist2015
         {
-            Name = 'yubikey-neo-manager'
-            Ensure = 'Absent'
+            Name = 'vcredist2015'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }
-        cChocoPackageInstaller YubikeyPersonalizationTool
+        }   
+        cChocoPackageInstaller vcredist2015
         {
-            Name = 'yubikey-personalization-tool'
-            Ensure = 'Absent'
+            Name = 'vcredist2017'
+            Ensure = 'Present'
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
-        }
+        }    
+
+        
 
         #------------------------------------------------------------------------------------------------------------------
         # Comparison Tools
@@ -752,126 +478,6 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }   
-
-        #------------------------------------------------------------------------------------------------------------------
-        # .NET Framework Versions
-        #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller dotnet35
-        {
-            Name = 'dotnet3.5'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }  
-        cChocoPackageInstaller dotnet45
-        {
-            Name = 'dotnet4.5'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
-        cChocoPackageInstaller dotnet451
-        {
-            Name = 'dotnet4.5.1'
-            Ensure = 'Present' 
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller dotnet452
-        {
-            Name = 'dotnet4.5.2'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller dotnet46
-        {
-            Name = 'dotnet4.6'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        } 
-        cChocoPackageInstaller dotnet461
-        {
-            Name = 'dotnet4.6.1'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }         
-        cChocoPackageInstaller dotnet462
-        {
-            Name = 'dotnet4.6.2'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }      
-        cChocoPackageInstaller dotnet47
-        {
-            Name = 'dotnet4.7'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }   
-        cChocoPackageInstaller dotnet471
-        {
-            Name = 'dotnet4.7.1'
-            Ensure = 'Present'
-            DependsOn = '[cChocoInstaller]Chocolatey'
-            AutoUpgrade = $True
-        }          
-        
-        #------------------------------------------------------------------------------------------------------------------
-        # .NET Framework Development Packs
-        #------------------------------------------------------------------------------------------------------------------
-        cChocoPackageInstaller NetFx452devpack
-        {
-            Name = 'netfx-4.5.2-devpack'
-            Ensure = 'Present'
-            DependsOn = '[cChocoPackageInstaller]dotnet452'
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller Netfx46devpack
-        {
-            Name = 'netfx-4.6-devpack'
-            Ensure = 'Present'
-            DependsOn = '[cChocoPackageInstaller]dotnet46'
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller Netfx461devpack
-        {
-            Name = 'netfx-4.6.1-devpack'
-            Ensure = 'Present'
-            DependsOn = '[cChocoPackageInstaller]dotnet461'
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller Netfx462devpack
-        {
-            Name = 'netfx-4.6.2-devpack'
-            Ensure = 'Present'
-            DependsOn = '[cChocoPackageInstaller]dotnet462'
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller Netfx47devpack
-        {
-            Name = 'netfx-4.7-devpack'
-            Ensure = 'Present'
-            DependsOn = '[cChocoPackageInstaller]dotnet47'
-            AutoUpgrade = $True
-        } 
-        
-        cChocoPackageInstaller Netfx471devpack
-        {
-            Name = 'netfx-4.7.1-devpack'
-            Ensure = 'Present'
-            DependsOn = '[cChocoPackageInstaller]dotnet471'
-            AutoUpgrade = $True
-        } 
-
-
         
         #------------------------------------------------------------------------------------------------------------------
         # msys2
@@ -1846,6 +1452,400 @@ configuration DevelopmentMachine
             AutoUpgrade = $True
         }  
         
+        #------------------------------------------------------------------------------------------------------------------
+        # Browsers
+        #------------------------------------------------------------------------------------------------------------------
+        cChocoPackageInstaller Firefox
+        {
+            Name = 'firefox'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        
+        cChocoPackageInstaller GoogleChrome
+        {
+            Name = 'googlechrome'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+ 
+        cChocoPackageInstaller GoogleChromeCanary
+        {
+            Name = 'googlechrome.canary'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        
+        cChocoPackageInstaller Opera
+        {
+            Name = 'opera'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }     
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Fonts
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller UbuntuFont
+        {
+            Name = 'ubuntu.font'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        cChocoPackageInstaller sourcecodepro
+        {
+            Name = 'sourcecodepro'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller anonymouspro
+        {
+            Name = 'anonymouspro'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+        cChocoPackageInstaller bitstreamverafonts
+        {
+            Name = 'bitstreamverafonts'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller robotofonts
+        {
+            Name = 'robotofonts'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+        cChocoPackageInstaller opensans
+        {
+            Name = 'opensans'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller FontAwesomeFont
+        {
+            Name = 'font-awesome-font'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+        cChocoPackageInstaller oxygenmono
+        {
+            Name = 'oxygenmono'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller hackfont
+        {
+            Name = 'hackfont'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }    
+       
+        #------------------------------------------------------------------------------------------------------------------
+        # File Sharing
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller dropbox
+        {
+            Name = 'dropbox'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller onedrive
+        {
+            Name = 'onedrive'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller googledrive
+        {
+            Name = 'googledrive'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }          
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Messenging Tools
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller Slack
+        {
+            Name = 'slack'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller MicrosoftTeams
+        {
+            Name = 'microsoft-teams'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller Gitter
+        {
+            Name = 'gitter'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller Skype
+        {
+            Name = 'skype'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller SkypeForBusiness
+        {
+            Name = 'skypeforbusiness'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        } 
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Utilities
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller 7zip
+        {
+            Name = '7zip'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller Grammarly
+        {
+            Name = 'grammarly'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller nimbletext
+        {
+            Name = 'nimbletext'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller windirstat
+        {
+            Name = 'windirstat'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+ 
+        cChocoPackageInstaller fciv
+        {
+            Name = 'fciv'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+        
+            
+        #------------------------------------------------------------------------------------------------------------------
+        # Password Managers
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller _1Password
+        {
+            Name = '1password'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller _1PasswordCli
+        {
+            Name = 'op'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Remote Desktop Manager
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller RemoteDesktopManager
+        {
+            Name = 'rdm'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        cChocoPackageInstaller RemoteDesktopManagerFree
+        {
+            Name = 'rdmfree'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        cChocoPackageInstaller RemoteDesktopManagerAgent
+        {
+            Name = 'rdmagent'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+
+        #------------------------------------------------------------------------------------------------------------------
+        # Royal TS
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller RoyalTS
+        {
+            Name = 'royalts'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # SSH Tools
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller winscp
+        {
+            Name = 'winscp'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller putty
+        {
+            Name = 'putty'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller BitviseSshClient
+        {
+            Name = 'bitvise-ssh-client'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }  
+        cChocoPackageInstaller BitviseSshServer
+        {
+            Name = 'bitvise-ssh-server'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }   
+        cChocoPackageInstaller OpenSSH
+        {
+            Name = 'openssh'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }           
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # Networking
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller WinPCAP
+        {
+            Name = 'winpcap'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller Wireshark
+        {
+            Name = 'wireshark'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller MicrosoftMessageAnalyzer
+        {
+            Name = 'microsoft-message-analyzer'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller nmap
+        {
+            Name = 'nmap'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # System Tools
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller LogParserStudio
+        {
+            Name = 'logparserstudio'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }        
+        cChocoPackageInstaller SysInternals
+        {
+            Name = 'sysinternals'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }      
+        
+        #------------------------------------------------------------------------------------------------------------------
+        # NuGet
+        #------------------------------------------------------------------------------------------------------------------        
+        cChocoPackageInstaller nugetpackageexplorer
+        {
+            Name = 'nugetpackageexplorer'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller NugetCommandLine
+        {
+            Name = 'Nuget.CommandLine'
+            Ensure = 'Present'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }         
+       
+        #------------------------------------------------------------------------------------------------------------------
+        # Yubico
+        #------------------------------------------------------------------------------------------------------------------       
+        cChocoPackageInstaller YubicoAuthenticator
+        {
+            Name = 'yubico-authenticator'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller YubikeyNeoManager
+        {
+            Name = 'yubikey-neo-manager'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
+        cChocoPackageInstaller YubikeyPersonalizationTool
+        {
+            Name = 'yubikey-personalization-tool'
+            Ensure = 'Absent'
+            DependsOn = '[cChocoInstaller]Chocolatey'
+            AutoUpgrade = $True
+        }
 
         
     }
