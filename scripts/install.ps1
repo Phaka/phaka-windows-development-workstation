@@ -7,11 +7,11 @@ configuration DevelopmentMachine
     
     Node localhost
     {
-		LocalConfigurationManager
-		{
-			ConfigurationMode = "ApplyAndAutoCorrect"
-			ConfigurationModeFrequencyMins = 30
-		}
+        LocalConfigurationManager
+        {
+            ConfigurationMode = "ApplyAndAutoCorrect"
+            ConfigurationModeFrequencyMins = 30
+        }
 
         #------------------------------------------------------------------------------------------------------------------
         # Windows Features
@@ -21,7 +21,12 @@ configuration DevelopmentMachine
             Ensure = "Present" 
             Name = "Web-Server"                       
         } 
-        
+        WindowsFeature RemoteAccessMgmtTools
+        { 
+            Ensure = "Present" 
+            Name = "RemoteAccessMgmtTools"                       
+        } 
+	
         #------------------------------------------------------------------------------------------------------------------
         # Chocolatey
         #------------------------------------------------------------------------------------------------------------------           
