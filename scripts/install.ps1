@@ -349,7 +349,7 @@ configuration DevelopmentMachine
             DependsOn = '[cChocoInstaller]Chocolatey'
             AutoUpgrade = $True
         }   
-        cChocoPackageInstaller vcredist2015
+        cChocoPackageInstaller vcredist2017
         {
             Name = 'vcredist2017'
             Ensure = 'Present'
