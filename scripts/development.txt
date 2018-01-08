@@ -11,25 +11,25 @@ chocolatey feature enable -n=allowGlobalConfirmation
 # cinst IIS-NetFxExtensibility -source windowsfeatures                                     
 # cinst IIS-NetFxExtensibility45 -source windowsfeatures
 
-# cinst dotnet3.5
-# cinst dotnet4.5
-# cinst dotnet4.5.1
-# cinst dotnet4.5.2
-# cinst dotnet4.6
-# cinst dotnet4.6.1
-# cinst dotnet4.6.2
-# cinst dotnet4.7
-# cinst dotnet4.7.1
+cinst dotnet3.5
+cinst dotnet4.5
+cinst dotnet4.5.1
+cinst dotnet4.5.2
+cinst dotnet4.6
+cinst dotnet4.6.1
+cinst dotnet4.6.2
+cinst dotnet4.7
+cinst dotnet4.7.1
 
-# cinst netfx-4.5.1-devpack
-# cinst netfx-4.5.2-devpack
-# cinst netfx-4.6-devpac
-# cinst netfx-4.6.1-devpac
-# cinst netfx-4.6.2-devpac
-# cinst netfx-4.7-devpack
-# cinst netfx-4.7.1-devpack
+cinst netfx-4.5.1-devpack
+cinst netfx-4.5.2-devpack
+cinst netfx-4.6-devpac
+cinst netfx-4.6.1-devpac
+cinst netfx-4.6.2-devpac
+cinst netfx-4.7-devpack
+cinst netfx-4.7.1-devpack
 
-# cinst 7zip
+cinst 7zip
 
 # cinst windows-sdk-6.0
 # cinst windows-sdk-6.1
@@ -40,97 +40,93 @@ chocolatey feature enable -n=allowGlobalConfirmation
 # cinst windows-sdk-10.0
 # cinst windows-sdk-10.1
 
-# cinst vcredist2008
-# cinst vcredist2010
-# cinst vcredist2012
-# cinst vcredist2013
-# cinst vcredist2015
-# cinst vcredist2017
+cinst vcredist2008
+cinst vcredist2010
+cinst vcredist2012
+cinst vcredist2013
+cinst vcredist2015
+cinst vcredist2017
 
-# cinst powershell # Upgrade PowerShell to 5.1 or later
+cinst powershell # Upgrade PowerShell to 5.1 or later
 
-# cinst winmerge
-# cinst beyondcompare
+cinst winmerge
+cinst beyondcompare
 
-# cinst git.install
-# cinst gitkraken
+cinst git.install
+cinst gitkraken
 # cinst tortoisegit
 # cinst smartgit
 # cinst sourcetree
 
-# cinst hg
+cinst hg
 # cinst tortoisehg
 
-# cinst svn
+cinst svn
 # cinst tortoisesvn
 
 # cinst bzr # Bazaar
 
-# cinst dotnetcore-sdk
+cinst dotnetcore-sdk
 
-# cinst msys2
-# cinst mingw
-# cinst cygwin
+cinst msys2
+cinst mingw
+cinst cygwin
 
-# cinst jdk8
-# cinst jdk9
-# cinst gradle
-# cinst maven
-# cinst ant
-# cinst ivy
+cinst jdk8
+cinst jdk9
+cinst gradle
+cinst maven
+cinst ant
+cinst ivy
 
-# cinst scala
-# cinst sbt
+cinst scala
+cinst sbt
 
-# cinst python2 
-# cinst python
-# cinst jupyter -source python
+cinst python2 
+cinst python
 
-# cinst golang
-# cinst haskell-stack
-# cinst clojure
-# cinst ruby --version 1.9 -my
-# cinst ruby --version 2.0 -my
-# cinst ruby --version 2.1 -my
-# cinst ruby2.devkit
+cinst golang
+cinst haskell-stack
+cinst clojure
+cinst ruby
+cinst ruby2.devkit
 
-# cinst nodejs
-# cinst yarn
-# cinst bower
-# cinst gulp-cli
+cinst nodejs
+cinst yarn
+cinst bower
+cinst gulp-cli
 
-# cinst webpi
-# cinst webpicommandline
+cinst webpi
+cinst webpicommandline
 
-# cinst springtoolsuite
-# cinst netbeans
-# cinst eclipse
+cinst springtoolsuite
+cinst netbeans
+cinst eclipse
 
-# cinst fiddler4
-# cinst office365proplus
-# cinst powerbi
+cinst fiddler4
+cinst office365proplus
+cinst powerbi
 
-# cinst visualstudiocode
-# cinst vscode-powershell
-# cinst vscode-csharp
-# cinst vscode-docker
-# cinst vscode-cake
-# cinst vscode-gitattributes
-# cinst vscode-gitlens
+cinst visualstudiocode
+cinst vscode-powershell
+cinst vscode-csharp
+cinst vscode-docker
+cinst vscode-cake
+cinst vscode-gitattributes
+cinst vscode-gitlens
 
-# cinst visualstudio2012professional
+cinst visualstudio2012professional
 # cinst visualstudio2012premium
 # cinst visualstudio2012ultimate
 # cinst poshtools-visualstudio2012
 # cinst ssdt12
 
-# cinst visualstudio2013professional
-# cinst visualstudio2013premium
+cinst visualstudio2013professional
 # cinst visualstudio2013premium
 # cinst powershell-visualstudio2013
 
 # cinst visualstudio2015community
-# cinst visualstudio2015professional
+cinst visualstudio2015professional
 # cinst visualstudio2015enterprise
 # cinst ssdt15
 # cinst visualstudio2015-powershelltools
@@ -138,115 +134,116 @@ chocolatey feature enable -n=allowGlobalConfirmation
 # cinst visualstudio2015-nugetpackagemanager
 
 # cinst visualstudio2017community --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
-# cinst visualstudio2017professional --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
+cinst visualstudio2017professional --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
 # cinst visualstudio2017enterprise --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
 # cinst visualstudio2017buildtools --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
 
-# cinst ghostdoc-enterprise
-# cinst postman
-# cinst specflow
-# cinst wixtoolset
-# cinst webdeploy
+cinst ghostdoc-enterprise
+cinst postman
+cinst specflow
+cinst wixtoolset
+cinst webdeploy
 
-# cinst pester
-# cinst pscx
-# cinst psake
+cinst pester
+cinst pscx
+cinst psake
 
-# cinst jetbrainstoolbox
-# cinst resharper-ultimate-all
+cinst jetbrainstoolbox
+cinst resharper-ultimate-all
 # cinst resharper
 # cinst dotpeek
 # cinst dotcover
 # cinst dottrace
 # cinst dotmemory
 # cinst resharpercpp
-# cinst dotcover-cli
+cinst dotcover-cli
 # cinst teamcityaddin
-# cinst resharper-clt
-# cinst clion-ide
-# cinst phpstorm
-# cinst datagrip
-# cinst webstorm
+cinst resharper-clt
+cinst clion-ide
+cinst phpstorm
+cinst datagrip
+cinst webstorm
 # cinst pycharm-community
-# cinst pycharm
-# cinst kotlinc
-# cinst intellijidea-ultimate
+cinst pycharm
+cinst kotlinc
+cinst intellijidea-ultimate
 # cinst intellijidea-community
 
-# cinst miktex
-# cinst pandoc
-# cinst sandcastle
-# cinst hugo
-# cinst pickles
-# cinst picklesui
+cinst miktex
+cinst pandoc
+cinst sandcastle
+cinst hugo
+cinst pickles
+cinst picklesui
+cinst docfx
 
-# cinst vmwareworkstation
+cinst vmwareworkstation
 # cinst vmwareplayer
 
-# cinst packer
-# cinst vagrant
-# cinst vault
-# cinst terraform
+cinst packer
+cinst vagrant
+cinst vault
+cinst terraform
 
-# cinst firefox
-# cinst googlechrome
-# cinst googlechrome.canary
-# cinst opera
+cinst firefox
+cinst googlechrome
+cinst googlechrome.canary
+cinst opera
 
-# cinst ubuntu.font
-# cinst sourcecodepro
-# cinst anonymouspro
-# cinst bitstreamverafonts
-# cinst robotofonts
-# cinst opensans
-# cinst font-awesome-font
-# cinst oxygenmono
-# cinst hackfont
+cinst ubuntu.font
+cinst sourcecodepro
+cinst anonymouspro
+cinst bitstreamverafonts
+cinst robotofonts
+cinst opensans
+cinst font-awesome-font
+cinst oxygenmono
+cinst hackfont
 
 # cinst dropbox
 # cinst onedrive
 # cinst googledrive
 
-# cinst slack
+cinst slack
 # cinst microsoft-teams
 # cinst gitter
 # cinst skype
 # cinst skypeforbusiness
 
 # cinst 7zip
-# cinst grammarly
-# cinst nimbletext
-# cinst windirstat
-# cinst fciv
+cinst grammarly
+cinst nimbletext
+cinst windirstat
+cinst fciv
 
-# cinst 1password
-# cinst op
+cinst 1password
+cinst op
         
-# cinst rdm
+cinst rdm
 # cinst rdmfree
 # cinst rdmagent    
 # cinst royalts
 
-# cinst winscp
-# cinst putty
-# cinst bitvise-ssh-client  
+cinst winscp
+cinst putty
+cinst bitvise-ssh-client  
 # cinst bitvise-ssh-server   
 # cinst openssh
 
-# cinst winpcap
-# cinst wireshark
-# cinst microsoft-message-analyzer
-# cinst nmap
+cinst winpcap
+cinst wireshark
+cinst microsoft-message-analyzer
+cinst nmap
 
-# cinst logparserstudio
-# cinst sysinternals
+cinst logparserstudio
+cinst sysinternals
 
-# cinst nugetpackageexplorer
-# cinst Nuget.CommandLine
+cinst nugetpackageexplorer
+cinst Nuget.CommandLine
 
-# cinst yubico-authenticator
-# cinst yubikey-neo-manager
-# cinst yubikey-personalization-tool
+cinst yubico-authenticator
+cinst yubikey-neo-manager
+cinst yubikey-personalization-tool
 
 chocolatey feature disable -n=allowGlobalConfirmation
 
@@ -261,5 +258,5 @@ Enable-RemoteDesktop
 Enable-MicrosoftUpdate
 Set-TaskbarOptions -Lock -Combine Always -AlwaysShowIconsOn -Dock Bottom
 
-# Install-WindowsUpdate -acceptEula
+Install-WindowsUpdate -acceptEula
 
