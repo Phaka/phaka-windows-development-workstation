@@ -1,7 +1,5 @@
 Set-ItemProperty 'HKCU:\Control Panel\Colors' -Name Background -Value "32 32 32 "
 
-Install-WindowsUpdate -acceptEula
-
 chocolatey feature enable -n=allowGlobalConfirmation
 
 # cinst IIS-WebServer -source windowsfeatures
@@ -13,34 +11,34 @@ chocolatey feature enable -n=allowGlobalConfirmation
 # cinst IIS-NetFxExtensibility -source windowsfeatures                                     
 # cinst IIS-NetFxExtensibility45 -source windowsfeatures
 
-cinst dotnet3.5
-cinst dotnet4.5
-cinst dotnet4.5.1
-cinst dotnet4.5.2
-cinst dotnet4.6
-cinst dotnet4.6.1
-cinst dotnet4.6.2
-cinst dotnet4.7
-cinst dotnet4.7.1
+# cinst dotnet3.5
+# cinst dotnet4.5
+# cinst dotnet4.5.1
+# cinst dotnet4.5.2
+# cinst dotnet4.6
+# cinst dotnet4.6.1
+# cinst dotnet4.6.2
+# cinst dotnet4.7
+# cinst dotnet4.7.1
 
-cinst netfx-4.5.1-devpack
-cinst netfx-4.5.2-devpack
-cinst netfx-4.6-devpac
-cinst netfx-4.6.1-devpac
-cinst netfx-4.6.2-devpac
-cinst netfx-4.7-devpack
-cinst netfx-4.7.1-devpack
+# cinst netfx-4.5.1-devpack
+# cinst netfx-4.5.2-devpack
+# cinst netfx-4.6-devpac
+# cinst netfx-4.6.1-devpac
+# cinst netfx-4.6.2-devpac
+# cinst netfx-4.7-devpack
+# cinst netfx-4.7.1-devpack
 
-cinst 7zip
+# cinst 7zip
 
-cinst windows-sdk-6.0
-cinst windows-sdk-6.1
-cinst windows-sdk-7.0
-cinst windows-sdk-7.1
-cinst windows-sdk-8.0
-cinst windows-sdk-8.1
-cinst windows-sdk-10.0
-cinst windows-sdk-10.1
+# cinst windows-sdk-6.0
+# cinst windows-sdk-6.1
+# cinst windows-sdk-7.0
+# cinst windows-sdk-7.1
+# cinst windows-sdk-8.0
+# cinst windows-sdk-8.1
+# cinst windows-sdk-10.0
+# cinst windows-sdk-10.1
 
 # cinst vcredist2008
 # cinst vcredist2010
@@ -191,7 +189,7 @@ cinst windows-sdk-10.1
 # cinst terraform
 
 # cinst firefox
-cinst googlechrome
+# cinst googlechrome
 # cinst googlechrome.canary
 # cinst opera
 
@@ -209,7 +207,7 @@ cinst googlechrome
 # cinst onedrive
 # cinst googledrive
 
-cinst slack
+# cinst slack
 # cinst microsoft-teams
 # cinst gitter
 # cinst skype
@@ -263,5 +261,5 @@ Enable-RemoteDesktop
 Enable-MicrosoftUpdate
 Set-TaskbarOptions -Lock -Combine Always -AlwaysShowIconsOn -Dock Bottom
 
-Install-WindowsUpdate -acceptEula
+# Install-WindowsUpdate -acceptEula
 
