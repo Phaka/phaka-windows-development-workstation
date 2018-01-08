@@ -4,15 +4,3 @@ choco install -y BoxStarter
 # Configure WinRM for the DSC Script
 winrm quickconfig -quiet
 Set-Item -Path WSMan:\localhost\MaxEnvelopeSizeKb -Value 8192
-
-# DSC Modules
-Install-PackageProvider Nuget -force -verbose
-Install-PackageProvider chocolatey -force -verbose
-Install-Module -Name cChoco -Force
-
-# Get the party started
-Import-Module 'C:\ProgramData\Boxstarter\Boxstarter.Bootstrapper\boxstarter.bootstrapper.psd1'
-
-# Import-Module Boxstarter.Chocolatey
-$credentials = Get-Credential
-Install-BoxstarterPackage -Credential $credentials -PackageName "https://raw.githubusercontent.com/Phaka/phaka-windows-development-workstation/initial/scripts/development.txt"
