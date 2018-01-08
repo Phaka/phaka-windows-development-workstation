@@ -93,7 +93,6 @@ cinst ruby2.devkit
 
 cinst nodejs
 cinst yarn
-cinst bower
 cinst gulp-cli
 
 cinst webpi
