@@ -117,28 +117,28 @@ cinst vscode-cake
 cinst vscode-gitattributes
 cinst vscode-gitlens
 
-cinst visualstudio2012professional
-# cinst visualstudio2012premium
-# cinst visualstudio2012ultimate
-# cinst poshtools-visualstudio2012
-# cinst ssdt12
+cinst visualstudio2012professional --execution-timeout=0
+# cinst visualstudio2012premium --execution-timeout=0
+# cinst visualstudio2012ultimate --execution-timeout=0
+# cinst poshtools-visualstudio2012 --execution-timeout=0
+# cinst ssdt12 --execution-timeout=0
 
-cinst visualstudio2013professional
-# cinst visualstudio2013premium
-# cinst powershell-visualstudio2013
+cinst visualstudio2013professional --execution-timeout=0
+# cinst visualstudio2013premium --execution-timeout=0
+# cinst powershell-visualstudio2013 --execution-timeout=0
 
-# cinst visualstudio2015community
-cinst visualstudio2015professional
-# cinst visualstudio2015enterprise
+# cinst visualstudio2015community --execution-timeout=0
+cinst visualstudio2015professional --execution-timeout=0
+# cinst visualstudio2015enterprise --execution-timeout=0
 # cinst ssdt15
 # cinst visualstudio2015-powershelltools
 # cinst poshtools-visualstudio2015
 # cinst visualstudio2015-nugetpackagemanager
 
-# cinst visualstudio2017community --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
-cinst visualstudio2017professional --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
-# cinst visualstudio2017enterprise --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
-# cinst visualstudio2017buildtools --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait"
+# cinst visualstudio2017community --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait" --execution-timeout=0
+cinst visualstudio2017professional --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait" --execution-timeout=0
+# cinst visualstudio2017enterprise --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait" --execution-timeout=0
+# cinst visualstudio2017buildtools --params="--allWorkloads --includeRecommended --includeOptional --quiet --locale en-US --norestart --wait" --execution-timeout=0
 
 cinst ghostdoc-enterprise
 cinst postman
