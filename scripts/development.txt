@@ -103,6 +103,8 @@ cinst springtoolsuite
 cinst netbeans
 cinst eclipse
 
+cinst docker
+
 cinst fiddler4
 cinst office365proplus
 cinst powerbi
