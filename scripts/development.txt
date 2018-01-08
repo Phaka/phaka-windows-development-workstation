@@ -2,7 +2,7 @@ Set-ItemProperty 'HKCU:\Control Panel\Colors' -Name Background -Value "32 32 32 
 
 chocolatey feature enable -n=allowGlobalConfirmation
 
-# cinst IIS-WebServer -source windowsfeatures
+cinst IIS-WebServer -source windowsfeatures
 # cinst NetFx3 -source windowsfeatures
 # cinst NetFx3ServerFeatures -source windowsfeatures
 # cinst NetFx4 -source windowsfeatures            
