@@ -14,17 +14,13 @@ I often reinstall my development workstation due to the entrophy that sets in af
 The following command will download the script and execute it.
 
 ```
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Phaka/phaka-windows-development-workstation/master/scripts/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Phaka/phaka-windows-development-workstation/initial/scripts/bootstrap.ps1'))
 ```
 
-This will install the following:
+Start a new PowerShell credentials
 
-- [ ] [Chocolatey](https://chocolatey.org)
-- [ ] JDK 9
-- [ ] JDK 8
-- [ ] JDK 7
-- [ ] Git
-- [ ] Git LFS
-- [ ] Firefox
-- [ ] Chrome
-- [ ] Opera
+```
+Import-Module Boxstarter.Chocolatey
+$credentials = Get-Credential
+Install-BoxstarterPackage -Credential $credentials -PackageName "https://raw.githubusercontent.com/Phaka/phaka-windows-development-workstation/initial/scripts/development.txt"
+```
