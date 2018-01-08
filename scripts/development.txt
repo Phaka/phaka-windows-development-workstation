@@ -23,9 +23,9 @@ cinst dotnet4.7.1
 
 cinst netfx-4.5.1-devpack
 cinst netfx-4.5.2-devpack
-cinst netfx-4.6-devpac
-cinst netfx-4.6.1-devpac
-cinst netfx-4.6.2-devpac
+cinst netfx-4.6-devpack
+cinst netfx-4.6.1-devpack
+cinst netfx-4.6.2-devpack
 cinst netfx-4.7-devpack
 cinst netfx-4.7.1-devpack
 
