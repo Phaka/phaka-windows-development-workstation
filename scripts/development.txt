@@ -3,15 +3,77 @@ Set-ItemProperty 'HKCU:\Control Panel\Colors' -Name Background -Value "32 32 32 
 chocolatey feature enable -n=allowGlobalConfirmation
 
 cinst IIS-WebServer -source windowsfeatures
-# cinst NetFx3 -source windowsfeatures
-# cinst NetFx3ServerFeatures -source windowsfeatures
-# cinst NetFx4 -source windowsfeatures            
-# cinst NetFx4ServerFeatures -source windowsfeatures
-# cinst NetFx4Extended-ASPNET45 -source windowsfeatures
-# cinst IIS-NetFxExtensibility -source windowsfeatures                                     
-# cinst IIS-NetFxExtensibility45 -source windowsfeatures
+cinst IIS-WebServerRole -source windowsfeatures
+cinst IIS-WebServer  -source windowsfeatures
+cinst IIS-CommonHttpFeatures -source windowsfeatures
+cinst IIS-Security -source windowsfeatures
+cinst IIS-RequestFiltering -source windowsfeatures
+cinst IIS-StaticContent -source windowsfeatures
+cinst IIS-DefaultDocument -source windowsfeatures
+cinst IIS-DirectoryBrowsing -source windowsfeatures
+cinst IIS-HttpErrors -source windowsfeatures
+cinst IIS-HttpRedirect -source windowsfeatures
+# cinst IIS-WebDAV -source windowsfeatures
+cinst IIS-ApplicationDevelopment -source windowsfeatures
+cinst IIS-WebSockets -source windowsfeatures
+cinst IIS-ApplicationInit -source windowsfeatures
+cinst IIS-NetFxExtensibility -source windowsfeatures
+cinst IIS-NetFxExtensibility45 -source windowsfeatures
+cinst IIS-ISAPIExtensions -source windowsfeatures
+cinst IIS-ISAPIFilter -source windowsfeatures
 
-cinst dotnet3.5
+cinst IIS-ASP -source windowsfeatures
+cinst IIS-CGI -source windowsfeatures
+cinst IIS-ServerSideIncludes -source windowsfeatures
+cinst IIS-HealthAndDiagnostics -source windowsfeatures
+cinst IIS-HttpLogging -source windowsfeatures
+cinst IIS-LoggingLibraries -source windowsfeatures
+cinst IIS-RequestMonitor -source windowsfeatures
+cinst IIS-HttpTracing -source windowsfeatures
+cinst IIS-CustomLogging -source windowsfeatures
+cinst IIS-ODBCLogging -source windowsfeatures
+cinst IIS-CertProvider -source windowsfeatures
+cinst IIS-BasicAuthentication -source windowsfeatures
+cinst IIS-WindowsAuthentication -source windowsfeatures
+cinst IIS-DigestAuthentication -source windowsfeatures
+cinst IIS-ClientCertificateMappingAuthentication -source windowsfeatures
+cinst IIS-IISCertificateMappingAuthentication -source windowsfeatures
+cinst IIS-URLAuthorization -source windowsfeatures
+cinst IIS-IPSecurity -source windowsfeatures
+cinst IIS-Performance -source windowsfeatures
+cinst IIS-HttpCompressionStatic -source windowsfeatures
+cinst IIS-HttpCompressionDynamic -source windowsfeatures
+cinst IIS-WebServerManagementTools -source windowsfeatures
+cinst IIS-ManagementConsole -source windowsfeatures
+cinst IIS-LegacySnapIn -source windowsfeatures
+cinst IIS-ManagementScriptingTools -source windowsfeatures
+cinst IIS-ManagementService -source windowsfeatures
+cinst IIS-IIS6ManagementCompatibility -source windowsfeatures
+cinst IIS-Metabase -source windowsfeatures
+cinst IIS-WMICompatibility -source windowsfeatures
+cinst IIS-LegacyScripts -source windowsfeatures
+# cinst Web-Application-Proxy -source windowsfeatures
+
+# .NET 3.5
+cinst NetFx3 -source windowsfeatures
+cinst NetFx3ServerFeatures -source windowsfeatures
+cinst IIS-NetFxExtensibility -source windowsfeatures      
+cinst IIS-ASPNET -source windowsfeatures
+cinst WCF-HTTP-Activation -source windowsfeatures
+cinst WCF-NonHTTP-Activation -source windowsfeatures
+
+# .NET 4
+cinst NetFx4 -source windowsfeatures            
+cinst NetFx4ServerFeatures -source windowsfeatures
+cinst NetFx4Extended-ASPNET45 -source windowsfeatures 
+cinst IIS-ASPNET45 -source windowsfeatures
+cinst IIS-NetFxExtensibility45 -source windowsfeatures
+cinst WCF-Services45 -source windowsfeatures                                              
+cinst WCF-HTTP-Activation45 -source windowsfeatures                                       
+cinst WCF-TCP-Activation45 -source windowsfeatures                                         
+cinst WCF-Pipe-Activation45 -source windowsfeatures                                        
+cinst WCF-TCP-PortSharing45 -source windowsfeatures                                       
+
 cinst dotnet4.5
 cinst dotnet4.5.1
 cinst dotnet4.5.2
